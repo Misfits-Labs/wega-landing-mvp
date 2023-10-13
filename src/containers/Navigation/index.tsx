@@ -1,30 +1,22 @@
 /* eslint-disable react/no-unknown-property */
 import { Link } from 'react-router-dom';
 import { LogoDarkWo } from '../../assets/images';
-import { 
-  BrandContainer, 
-  Brand, 
+import {
+  BrandContainer,
+  Brand,
   NavigationLinksContainer,
   NavigationBar
 } from './types';
-import RainbowConnectButton from '../../components/RainBowConnectButton';
 import { useAnimateNav } from '../../hooks';
 import tw, { css } from 'twin.macro';
+import LaunchButton from '../../components/LaunchGameButton';
 
 const Navigation = () => {
   useAnimateNav();
-  const liElementStyle = css`
-   > li {
-    ${tw`box-border`}
-    a {
-      ${tw`block border-b-[2px] border-[transparent] hover:dark:border-oranjo`} 
-    }
-   }
-  ` 
 
   return (
-    <NavigationBar className="fixed w-full top-0 font-primary">
-      <div tw="container dark:text-blanc flex w-full py-[20px] px-[20px] justify-center items-end">
+    <NavigationBar className="fixed w-full top-0 font-primary overflow-hidden md:max-w-[100%]">
+      <div tw="container dark:text-blanc flex w-full py-[20px] px-[20px] justify-center items-end ">
         <NavigationLinksContainer tw="box-border flex w-full gap-x-[30px]">
           <BrandContainer tw="mb-[4px]">
             <div tw="mr-5">
@@ -32,14 +24,9 @@ const Navigation = () => {
             </div>
             <Brand><Link to="/">Wega</Link></Brand>
           </BrandContainer>
-          <ul tw="block flex items-end" css={[liElementStyle]} >
-            <li><Link to="/" tw="px-[8px]"><span>Play</span></Link></li>
-            <li><Link to="/swap" tw="px-[8px]"><span>Swap</span></Link></li>
-            <li><Link to="/wins" tw="px-[8px]"><span>Wins</span></Link></li>
-          </ul>
         </NavigationLinksContainer>
-        <div> 
-          <RainbowConnectButton />
+        <div>
+          <LaunchButton />
         </div>
       </div>
     </NavigationBar>

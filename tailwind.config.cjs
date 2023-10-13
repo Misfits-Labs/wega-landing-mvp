@@ -5,6 +5,7 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+
     extend: {
       colors: {
         blanc: '#FDFDFD',
@@ -13,12 +14,12 @@ export default {
           DEFAULT: '#151515',
           900: "#0A0A0A",
           800: "#151515",
-          700: "#1F1F1F",  
-          600: "#292929",  
-          500: "#333333",  
-          400: "#3D3D3D",  
+          700: "#1F1F1F",
+          600: "#292929",
+          500: "#333333",
+          400: "#3D3D3D",
           300: "#474747",
-          200: "#525252",  
+          200: "#525252",
           100: "#5C5C5C",
         },
         'pretu-lighter': '#232323',
@@ -34,8 +35,8 @@ export default {
           200: '#F69A65',
           100: '#F7A778',
         },
-        'oranjo-blanc': '#FF9C27', 
-      },     
+        'oranjo-blanc': '#FF9C27',
+      },
       fontFamily: {
         'primary': [
           'League Spartan',
@@ -52,15 +53,15 @@ export default {
       },
       keyframes: {
         'rotate-orbs': {
-          'from': { 	transform: "rotate(0deg) translateX(100px) rotate(360deg)" },
-          'to':   {  transform: "rotate(360deg) translateX(100px) rotate(0deg)" }
+          'from': { transform: "rotate(0deg) translateX(100px) rotate(360deg)" },
+          'to': { transform: "rotate(360deg) translateX(100px) rotate(0deg)" }
         }
       }
     },
     container: {
       center: true,
       padding: {
-        DEFAULT: '20px' 
+        DEFAULT: '20px'
       }
     }
   },

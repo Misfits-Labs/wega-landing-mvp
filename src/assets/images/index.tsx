@@ -1,4 +1,5 @@
 export { default as logoDark } from './logo-dark.png';
+export { default as meshBg } from './meshbg.jpg'
 export { default as LogoDarkWo } from './LogoDarkWo';
 export { default as S1NFTHero } from './S1NFTHero';
 export { default as S1NFTHeroV2 } from './S1NFTHeroV2';
@@ -18,3 +19,13 @@ export { default as dummyTheirs } from './dummyTheirs.png';
 export { default as dummyYours } from './dummyYours.png';
 export { default as SwapIcon } from './SwapIcon';
 export { default as GameCardOrb } from './GameCardOrb';
+export { default as OrIcon } from './OR';
+export { default as USDCIcon } from './usdc';
+export { default as USDTIcon } from './usdt';
+export { default as MaticIcon } from './matic';
+export { default as Noun392 } from './Noun392';
+export { default as Noun392R } from './Noun392R';
+export { default as Noun392L } from './Noun392L';
+export { default as ColorfulBanner } from './colorfulthing';
+export { default as DiceGameCardImg1 } from './DiceCardImg1';
+export { default as DiceGameCardImg2 } from './DiceCardImg2';

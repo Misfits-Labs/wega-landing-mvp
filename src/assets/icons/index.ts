@@ -30,3 +30,5 @@ export { default as CopyPasteIcon } from './CopyPasteIcon';
 export { default as CrownIcon } from './CrownIcon';
 export { default as RestartIcon } from './RestartIcon';
 export { default as DownloadIcon } from './DownloadIcon';
+export { default as XIcon } from './XIcon'
+export { default as TelegramIcon } from './TelegramIcon'
