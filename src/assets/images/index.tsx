@@ -26,6 +26,5 @@ export { default as MaticIcon } from './matic';
 export { default as Noun392 } from './Noun392';
 export { default as Noun392R } from './Noun392R';
 export { default as Noun392L } from './Noun392L';
-export { default as ColorfulBanner } from './colorfulthing';
 export { default as DiceGameCardImg1 } from './DiceCardImg1';
 export { default as DiceGameCardImg2 } from './DiceCardImg2';
