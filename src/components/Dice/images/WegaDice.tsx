@@ -32,7 +32,7 @@ const SvgComponent = forwardRef((props: SVGProps<SVGSVGElement>, ref: any) => (
       <g mask="url(#mask0_5523_12557)">
 
         <g id="all-sides">
-          <g id="one" style={{ transform: "translate(0, -100px)" }}>
+          <g id="one">
             <path
               id="Vector"
               d="M28.6728 30.2633C27.7931 30.2633 27.08 29.5501 27.08 28.6704C27.08 27.7908 27.7931 27.0776 28.6728 27.0776C29.5525 27.0776 30.2656 27.7908 30.2656 28.6704C30.2656 29.5501 29.5525 30.2633 28.6728 30.2633Z"
@@ -43,7 +43,7 @@ const SvgComponent = forwardRef((props: SVGProps<SVGSVGElement>, ref: any) => (
               strokeLinejoin="round"
             />
           </g>
-          <g id="two" style={{ transform: "translate(0, -200px)" }}>
+          <g id="two" style={{ transform: "translate(0, -100px)" }}>
             <path
               id="Vector_2"
               d="M14.3369 15.9278C13.4572 15.9278 12.7441 15.2147 12.7441 14.335C12.7441 13.4553 13.4572 12.7422 14.3369 12.7422C15.2166 12.7422 15.9297 13.4553 15.9297 14.335C15.9297 15.2147 15.2166 15.9278 14.3369 15.9278Z"
@@ -63,7 +63,7 @@ const SvgComponent = forwardRef((props: SVGProps<SVGSVGElement>, ref: any) => (
               strokeLinejoin="round"
             />
           </g>
-          <g id="three" style={{ transform: "translate(0, -300px)" }}>
+          <g id="three" style={{ transform: "translate(0, -200px)" }}>
             <path
               id="Vector_4"
               d="M14.3369 15.9278C13.4572 15.9278 12.7441 15.2147 12.7441 14.335C12.7441 13.4553 13.4572 12.7422 14.3369 12.7422C15.2166 12.7422 15.9297 13.4553 15.9297 14.335C15.9297 15.2147 15.2166 15.9278 14.3369 15.9278Z"
@@ -92,7 +92,7 @@ const SvgComponent = forwardRef((props: SVGProps<SVGSVGElement>, ref: any) => (
               strokeLinejoin="round"
             />
           </g>
-          <g id="four" style={{ transform: "translate(0, -400px)" }}>
+          <g id="four" style={{ transform: "translate(0, -300px)" }}>
             <path
               id="Vector_7"
               d="M14.3369 15.9278C13.4572 15.9278 12.7441 15.2147 12.7441 14.335C12.7441 13.4553 13.4572 12.7422 14.3369 12.7422C15.2166 12.7422 15.9297 13.4553 15.9297 14.335C15.9297 15.2147 15.2166 15.9278 14.3369 15.9278Z"
@@ -130,7 +130,7 @@ const SvgComponent = forwardRef((props: SVGProps<SVGSVGElement>, ref: any) => (
               strokeLinejoin="round"
             />
           </g>
-          <g id="five" style={{ transform: "translate(0, -500px)" }}>
+          <g id="five" style={{ transform: "translate(0, -400px)" }}>
             <path
               id="Vector_11"
               d="M14.3369 15.9283C13.4572 15.9283 12.7441 15.2152 12.7441 14.3355C12.7441 13.4558 13.4572 12.7427 14.3369 12.7427C15.2166 12.7427 15.9297 13.4558 15.9297 14.3355C15.9297 15.2152 15.2166 15.9283 14.3369 15.9283Z"
@@ -177,7 +177,7 @@ const SvgComponent = forwardRef((props: SVGProps<SVGSVGElement>, ref: any) => (
               strokeLinejoin="round"
             />
           </g>
-          <g id="six" style={{ transform: "translate(0, -600px)" }}>
+          <g id="six" style={{ transform: "translate(0, -500px)" }}>
             <path
               id="Vector_16"
               d="M14.3369 15.9278C13.4572 15.9278 12.7441 15.2147 12.7441 14.335C12.7441 13.4553 13.4572 12.7422 14.3369 12.7422C15.2166 12.7422 15.9297 13.4553 15.9297 14.335C15.9297 15.2147 15.2166 15.9278 14.3369 15.9278Z"
