@@ -8,9 +8,7 @@ import {
 } from 'react-router-dom';
 import 'twin.macro';
 import Navigation from '../Navigation'
-import { Toaster } from 'react-hot-toast';
-import { GlobalModal } from '../../common/modals';
-import Footer from '../../components/Footer';
+import Footer from '../Footer';
 
 const Layout = () => {
   const navigation = useNavigation();
@@ -38,12 +36,9 @@ const Layout = () => {
       </div>
 
       <Navigation />
-      <GlobalModal>
-        <Outlet />
-      </GlobalModal>
+      <Outlet />
       <Footer />
       <ScrollRestoration getKey={getKey} />
-      <Toaster />
     </>
   )
 }

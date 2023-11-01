@@ -6,14 +6,15 @@ import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro'
 const CustomStyles = createGlobalStyle({
 
   body: {
-    overflowX: 'hidden',
-    ...tw`flex justify-center `,
-    WebkitTapHighlightColor: theme`colors.orange`,
-    ...tw`antialiased`,
-    ...tw`dark:bg-pretu dark:text-blanc`,
-  },
-
+  overflowX: 'hidden',
+  zIndex: '-40',
+  position: 'relative',
+  WebkitTapHighlightColor: theme`colors.orange`,
+  ...tw`antialiased`,
+  ...tw`dark:bg-pretu dark:text-blanc`,
+ },
 })
+
 const GlobalStyles = () => (
   <>
     <BaseStyles />

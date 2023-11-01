@@ -1,4 +1,5 @@
-import tw, { styled } from 'twin.macro'
+import tw, { styled } from 'twin.macro';
+import { rgba } from 'polished';
 
 
 export const BrandContainer = styled.div`
@@ -29,11 +30,7 @@ export const Brand = styled.div`
 `
 
 export const NavigationLinksContainer = styled.div`
-box-sizing: border-box;
- & div:last-child, li:nth-child(4) {
-   justify-self: flex-end;
-   align-items: center;
- }
+  box-sizing: border-box;
 `
 
 export const NavigationConnectButton = styled.button`
@@ -68,6 +65,7 @@ export const NavigationBar = styled.nav`
       opacity: 0.85;
     }
   }
+
   &.nav-hide {
     transform: translateY(-100%);
   }
@@ -79,11 +77,10 @@ export const NavigationBar = styled.nav`
     right: 0;
     width: 100%;
     height: 100%;
-    z-index: -2;
-    ${tw`dark:bg-pretu/90`}
-    filter: blur(1.5rem);
+    z-index: 998;
     opacity: 0;
-    transition: opacity 500ms ease-out 60ms;
+    background: ${rgba('#151515', 0.90)};
+    transition: transform 500ms ease-out 60ms;
   }
 
   &::after, &.nav-mobile .navigation::after {
@@ -91,14 +88,13 @@ export const NavigationBar = styled.nav`
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -3;
+    z-index: 997;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(5.5rem) opacity(0.75);
     opacity: 0;
-    ${tw`dark:shadow-wega-nav`}
-    transition: all 500ms ease-out 60ms;
-    ${tw`dark:bg-pretu/90`}
+    ${tw`shadow-wega-nav`}
+    backdrop-filter: blur(5.5rem) opacity(0.85);
+    transition: transform 500ms ease-out 60ms;
   }
 `
 

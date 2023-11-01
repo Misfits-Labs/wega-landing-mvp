@@ -1,1 +1,0 @@
-export { default as GlobalModal, MODAL_TYPES, useGlobalModalContext } from './GlobalModal'

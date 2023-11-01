@@ -1,8 +1,6 @@
-import {
-    createHashRouter,
-} from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Layout from "../Layout";
-import LandingPage from "../Landing-Page";
+import LandingPage from "../LandingPage";
 
 const router = createHashRouter([
     {
@@ -16,7 +14,6 @@ const router = createHashRouter([
         ]
     }
 ])
-
 if (import.meta.hot) {
     import.meta.hot.dispose(() => router.dispose());
 }

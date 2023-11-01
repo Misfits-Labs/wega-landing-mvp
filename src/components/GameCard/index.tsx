@@ -14,18 +14,14 @@ import  {
 import  { GameCardOrb } from '../../assets/images';
 import Button from '../../common/Button';
 import { gsap } from 'gsap'; 
-import {
-  useConnectModal,
-} from '@rainbow-me/rainbowkit';
-import { useWegaStore } from '../../hooks';
 import { Link } from "react-router-dom";
+import { WegaTypes, WegaTypesEnum } from '../../models';
 
 export const DiceGameCard = () => {
   const iconRef = useRef<SVGSVGElement>(null);
   const orbRef = useRef<SVGSVGElement>(null);
   const [hovering, setHovering] = useState<boolean>();
-  const { openConnectModal } = useConnectModal();
-  const { wallet } = useWegaStore();
+
   
   useEffect(() => {    
     const ctx = gsap.context(() => {
@@ -77,9 +73,7 @@ export const DiceGameCard = () => {
         Roll the dice, the player with the highest number wins.
       </GameCardDescription>
       {
-        (!wallet && openConnectModal) ?
-        <Button buttonType="primary" content='Play' className="w-[75%]" onClick={()=> openConnectModal() } />
-        : <Link to="/dice/create" className="w-[75%]"><Button buttonType="primary" content='Play' className="w-[100%]"/></Link>
+        <Link to="http://35.208.209.92:8080/#/dice/create" className="w-[75%]" state={ { gameType: WegaTypes[WegaTypesEnum.DICE] }}><Button buttonType="primary" content='Play' className="w-[100%]"/></Link>
       }
       </GameCardBody>
     </GameCardContainer>
@@ -90,8 +84,6 @@ export const CoinFlipGameCard = () => {
   const iconRef = useRef<SVGSVGElement>(null);
   const orbRef = useRef<SVGSVGElement>(null);
   const [hovering, setHovering] = useState<boolean>();
-  const { openConnectModal } = useConnectModal();
-  const { wallet } = useWegaStore();
   
   useEffect(() => {    
     const ctx = gsap.context(() => {
@@ -142,9 +134,8 @@ export const CoinFlipGameCard = () => {
      </GameCardDescription>
 
      {
-      (!wallet && openConnectModal) ?
-        <Button buttonType="primary" content='Play' className="w-[75%]" onClick={()=> openConnectModal() } /> :
-        <Link to="/coinflip/create" className="w-[75%]"><Button buttonType="primary" content='Play' className="w-[100%]" /></Link>
+
+        <Link to="http://35.208.209.92:8080/#/coinflip/create" className="w-[75%]" state={ { gameType: WegaTypes[WegaTypesEnum.COINFLIP] } } ><Button buttonType="primary" content='Play' className="w-[100%]" /></Link>
      }
     </GameCardBody>
    </GameCardContainer>
@@ -207,7 +198,7 @@ export const CoinFlipGameCard = () => {
      </GameCardDescription>
      <Button 
       buttonType="primary" 
-      disabled={true} 
+      disabled={true}
       content='Coming soon' 
       className="w-[75%] dark:bg-gradient-to-r from-oranjo-blanc to-oranjo"/>
     </GameCardBody>

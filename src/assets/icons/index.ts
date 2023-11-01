@@ -7,6 +7,7 @@ export { default as ArrowTrSquareIcon } from './ArrowTrSquareIcon';
 export { default as GithubIcon } from './GithubIcon';
 export { default as DiscordIcon } from './DiscordIcon';
 export { default as TwitterIcon } from './TwitterIcon';
+export { default as WhitepaperIcon } from './WhitePaperIcon';
 export { default as SettingsIcon } from './SettingsIcon';
 export { default as CopySimpleIcon } from './CopySimpleIcon';
 export { default as ArrowsLeftRightIcon } from './ArrowsLeftRightIcon';

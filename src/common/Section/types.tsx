@@ -1,8 +1,5 @@
 import tw, { styled } from 'twin.macro';
 
-// TODO
- // make font size dynamic with tw
-
 export interface SectionContainerProps {
  direction: 'row' | 'col',
  reverse?: boolean;
@@ -26,17 +23,16 @@ export const SectionHeader = styled.span`
 `
 export const SectionHeaderSubtitle = styled.span`
   font-family: League Spartan;
-  font-size: 16px;
+  font-size: 21px;
   font-style: normal;
   font-weight: 400;
-  line-height: 15px; 
+  line-height: 19px; /* 90.476% */ 
 `
 
-export const SectionHeaderTitle = styled.span`
-  --font-size: 51px;
+export const SectionHeaderTitleLarge = styled.span`
+  --font-size: 67px;
   font-style: normal;
   font-weight: 600;
-  line-height: 47px
   text-align: center;
   font-size: var(--font-size);
   line-height: calc(var(--font-size) * 1.5);
@@ -47,3 +43,12 @@ export const SectionHeaderContainer = styled.div`
   height: calc(var(--font-size) * 1.5);
   display: flex;
 `
+export const SectionHeaderTitle = styled.span`
+  --font-size: 51px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 47px
+  text-align: center;
+  font-size: var(--font-size);
+  line-height: calc(var(--font-size) * 1.5);
+  justify-content: center;`

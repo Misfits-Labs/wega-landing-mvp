@@ -3,7 +3,7 @@ import 'twin.macro';
 
 const MainContainer: React.FC<MainPropsContainerProps> = ({ children, ...rest }: MainPropsContainerProps) => {
   return (
-    <main tw="container mt-36 flex flex-col items-center gap-y-[48px] w-full mx-auto" {...rest}>
+    <main tw="container mt-36 flex flex-col items-center gap-y-[10rem] w-full mx-auto" {...rest}>
       {children}
     </main>
   )
