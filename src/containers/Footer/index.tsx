@@ -1,11 +1,25 @@
+/* eslint-disable react/no-unknown-property */
 import { Link } from 'react-router-dom';
 import { LogoDarkWo } from '../../assets/images';
-import { TwitterIcon, GithubIcon, TelegramIcon,  } from '../../assets/icons';
+import { TwitterIcon, GithubIcon, WhitepaperIcon  } from '../../assets/icons';
 import { Brand, BrandContainer } from '../Navigation/types';
 import { NormalText } from '../../common/typography/types';
-import 'twin.macro';
+import tw, { css} from 'twin.macro';
 
 const Footer = () => {
+  const hoverStrokeOranjoStyle = css`
+    &:hover svg path {
+      border-color: black;
+      ${tw`stroke-oranjo`}
+    }
+  `
+  const hoverFillOranjoStyle = css`
+    &:hover svg path {
+      border-color: black;
+      ${tw`fill-oranjo`}
+    }
+  `
+  
   return (
     <footer tw="relative z-[0] w-full">
       {/* footer thingy */}
@@ -20,15 +34,15 @@ const Footer = () => {
             <div tw="flex flex-col items-center">
               <NormalText tw="text-[21px] leading-[19px] text-[#D3D3D3] mb-[32px]">Join the playrooms</NormalText>
               <div tw="flex gap-x-[55px] w-full justify-center mb-[12rem]">
-                <Link to="https://github.com/Misfits-Labs" target="_blank" tw="w-[44px]">
-                  <GithubIcon width="100%" height="100%" />
-                </Link>
-                <Link to="https://twitter.com/PlayWega" target="_blank" tw="w-[44px]">
+                <a href="https://wega.gitbook.io/wega-litepaper/" css={hoverStrokeOranjoStyle} target="_blank" tw="w-[44px]" rel="noreferrer">
+                <WhitepaperIcon width="100%" height="100%" />
+                </a>
+                <a href="https://twitter.com/PlayWega" css={hoverFillOranjoStyle} target="_blank" tw="w-[44px]" rel="noreferrer">
                   <TwitterIcon width="100%" height="100%" />
-                </Link>
-                <Link to="https://wega.gitbook.io/wega-litepaper/" target="_blank" tw="w-[44px]">
-                  <TelegramIcon width="100%" height="100%" />
-                </Link>
+                </a>
+                <a href="https://github.com/Misfits-Labs" css={hoverStrokeOranjoStyle} target="_blank" tw="w-[44px]" rel="noreferrer">
+                  <GithubIcon width="100%" height="100%"/>
+                </a>
               </div>
               <NormalText tw="text-[21px] leading-[19px] text-blanc">Play together, Own together.</NormalText>
             </div>

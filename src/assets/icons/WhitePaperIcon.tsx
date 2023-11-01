@@ -1,18 +1,10 @@
 import * as React from "react"
 import { SVGProps } from "react"
-import tw, { css } from 'twin.macro';
+
 
 interface WhitePaperIconProps extends SVGProps<SVGSVGElement>, React.Attributes {} 
 
 const SvgComponent = (props: WhitePaperIconProps ) => {
-    
-    const hoverStrokeOranjoStyle = css`
-      &:hover > path {
-        border-color: black;
-        ${tw`stroke-oranjo`}
-      }
-      `
-
     return (
       <svg
         width={24}
@@ -21,7 +13,6 @@ const SvgComponent = (props: WhitePaperIconProps ) => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         // eslint-disable-next-line react/no-unknown-property
-        css={hoverStrokeOranjoStyle}
         {...props}
       >
         <path
