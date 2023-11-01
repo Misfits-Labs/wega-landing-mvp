@@ -10,7 +10,7 @@ const Footer = () => {
     <footer tw="relative z-[0] w-full">
       {/* footer thingy */}
 
-      <div tw="container dark:text-blanc mt-5 flex flex w-full py-[56px] font-primary gap-y-[16px] justify-between">
+      <div tw="container dark:text-blanc mt-5 flex flex w-full py-[56px] font-primary gap-y-[16px] justify-between mt-[5rem]">
             <BrandContainer tw="mb-[4px]">
               <div tw="mr-5">
                 <Link to="/"><LogoDarkWo /></Link>

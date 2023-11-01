@@ -10,6 +10,8 @@ const LandingPageWagerTypeSection = () => {
  return (
   <Section
    direction='col'
+   tw="mt-[10rem]"
+
    hdr={
     <SectionHeaderContainer tw="flex-col justify-center items-center">
      <SectionHeaderTitle>
@@ -17,8 +19,8 @@ const LandingPageWagerTypeSection = () => {
       </SectionHeaderTitle>
      </SectionHeaderContainer>
    }>
-   <div tw='flex flex-col md:flex-row gap-[54px] h-[370px] justify-center items-center mt-44 md:mt-0'>
-    <div tw='flex flex-col items-center gap-[24px]  h-full w-[50%]'>
+   <div tw='flex flex-col md:flex-row gap-[54px] h-[370px] justify-center items-center mt-[5rem]'>
+    <div tw='flex flex-col items-center gap-[24px] h-full w-[50%]'>
       <div tw='w-full flex items-center justify-around mb-[-60px] md:mb-0'>
        <img src={wagerCurrenciesSource} alt="wager currencies"/>
       </div>

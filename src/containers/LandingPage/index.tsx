@@ -5,7 +5,6 @@ import LandingPagePlaySection from '../../components/LandingPagePlaySection';
 import LandingPageWagerTypeSection from '../../components/LandingPageWagerTypeSection';
 import LandingPageOwnTheYardSection from '../../components/LandingPageOwnTheYardSection';
 import MainContainer from '../../components/MainContainer';
-
 const LandingPage = () => {
     return (
         <>

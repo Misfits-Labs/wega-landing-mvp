@@ -1,7 +1,7 @@
 import tw, {styled} from 'twin.macro';
 
 export const FloatingOrbContainer = styled.div`
- ${tw`absolute top-0 right-0 w-full h-full z-[-20] flex justify-center items-center`}
+ ${tw`mt-[-5rem] absolute top-0 right-0 w-full h-full z-[-51] flex justify-center items-center`}
 `
 export const FloatingOrbBlurContainer = styled.div`
   content: '';

@@ -22,6 +22,8 @@ const LandingPageOwnTheYardSection = () => {
   return (
   <Section
    direction='col'
+   tw="mt-[10rem] gap-y-[5rem]"
+
    hdr={
     <SectionHeaderContainer tw="flex-col justify-center items-center">
      <SectionHeaderTitle>
@@ -40,7 +42,6 @@ const LandingPageOwnTheYardSection = () => {
         radius: "25px",
         }
     }/>
-
     <div tw="relative w-full h-full flex flex-row gap-x-[10px] items-center justify-center px-[35px] rounded-[25px]">
       <div tw="flex flex-col rounded-[25px]">
         <LargeText>Powered by Wega Protocol</LargeText>

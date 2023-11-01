@@ -25,9 +25,11 @@ const Navigation = () => {
           </BrandContainer>
         </NavigationLinksContainer>
         <div>
-          <Button buttonType="primary" tw="w-[max-content]">
+        <Link to="http://35.208.209.92:8080/#/">
+          <Button buttonType="primary" tw="flex justify-center items-center w-[max-content]">
             Play Beta
           </Button>
+        </Link>
         </div>
       </div>
     </NavigationBar>
