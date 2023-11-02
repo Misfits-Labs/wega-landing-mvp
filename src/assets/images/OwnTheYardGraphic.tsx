@@ -29,7 +29,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>)=> {
       tl.from([...ownHardTextPaths], { ease: Power1.easeInOut, duration, drawSVG: "0%" }, ">");
     }, svgRef.current);
     return () => context.revert(); 
-  });
+  }, [svgRef.current]);
 
   return ( <svg
     width={575}
