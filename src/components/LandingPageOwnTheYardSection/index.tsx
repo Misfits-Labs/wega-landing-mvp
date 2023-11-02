@@ -13,11 +13,9 @@ import {
   MediumText
 } from '../../common/typography/types'
 import OwnTheYardGraphic from '../../assets/images/OwnTheYardGraphic';
-// import { useOrbFollow } from "../../hooks";
 import 'twin.macro';
 
 const LandingPageOwnTheYardSection = () => {
-  // const addBackgrounds = useOrbFollow();
   const [isHoveringOnGradientBackground, setIsHoveringOnGradientBackground] = useState<any>(null);
   const handleGradientBackgroundHover = (enterOrLeave: string) => {
     if(enterOrLeave == 'enter') {
@@ -26,7 +24,6 @@ const LandingPageOwnTheYardSection = () => {
       setIsHoveringOnGradientBackground(false);
     } 
   } 
-
   return (
   <Section
    direction='col'
@@ -60,7 +57,7 @@ const LandingPageOwnTheYardSection = () => {
           <ArrowTrSquareIcon />
         </a>
       </div>
-    </div> {/** content-box */} 
+    </div> 
    </div>
   </Section>
  )

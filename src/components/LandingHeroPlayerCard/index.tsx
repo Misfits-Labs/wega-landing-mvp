@@ -21,7 +21,7 @@ export const LeftPlayerCard = () => {
           ensImage={leftAvatarSource}
           size={26.5} 
         />
-        <NormalText>You.eth</NormalText>
+        <NormalText>vitalik.eth</NormalText>
       </PlayerAvatarWrapper>
       <div tw="flex flex-col gap-y-[16px] items-center w-full">
         <NormalText tw="text-shinishi text-left w-full">Wager: </NormalText>
@@ -43,7 +43,7 @@ export const RightPlayerCard = () => {
           ensImage={rightAvatarSource}
           size={26.5} 
         />
-        <NormalText>Opponent.eth</NormalText>
+        <NormalText>0000.eth</NormalText>
       </PlayerAvatarWrapper>
       <div tw="flex flex-col gap-y-[16px] items-center w-full">
         <NormalText tw="text-shinishi text-left w-full">Wager: </NormalText>

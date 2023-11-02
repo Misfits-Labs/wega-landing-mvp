@@ -1,6 +1,6 @@
 
-import { SVGProps, useLayoutEffect, useRef} from "react";
-import { gsap, Power1 } from 'gsap';
+import { SVGProps, useRef} from "react";
+import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
 gsap.registerPlugin(ScrollTrigger);
@@ -8,28 +8,28 @@ gsap.registerPlugin(DrawSVGPlugin);
 
 const SvgComponent = (props: SVGProps<SVGSVGElement>)=> {
   const svgRef = useRef<any>(null);
-  useLayoutEffect(() => {
-    const context = gsap.context(() => {
-      const tl = gsap.timeline({ repeat: -1, repeatDelay: 1.5 });
-      const duration = 0.75;
-      const playHardPaths = document.querySelectorAll('#play-hard > path');
-      const playHardTextPaths = document.querySelectorAll('#play-hard-text > path');
-      const ownHardTextPaths = document.querySelectorAll('#own-hard-text > path');
-      const ownHardPaths = document.querySelectorAll('#own-hard > path');
-      tl.repeatDelay(1.5);
-      tl.to('#pyramid', { ease: Power1.easeInOut, opacity: 1, duration });
-      tl.to('#two', { ease: Power1.easeInOut, opacity: 1, duration }, ">");
-      tl.to('#three', { ease: Power1.easeInOut, opacity: 1, duration }, ">");
-      tl.to('#play-hard', { opacity: 1, ease: Power1.easeInOut, duration, drawSVG: "0%" }, ">");
-      tl.from([...playHardPaths], { ease: Power1.easeInOut, duration, drawSVG: "0%" }, "<");
-      tl.from([...playHardTextPaths], { ease: Power1.easeInOut, duration, drawSVG: "0%" }, "<");
-      tl.to('#dice', { opacity: 1, duration, ease: Power1.easeInOut }, "<" );
-      tl.to('#own-hard', { opacity: 1, duration, ease: Power1.easeInOut }, '>');
-      tl.from([...ownHardPaths], { duration, ease: Power1.easeInOut, drawSVG: "0%" }, '<');
-      tl.from([...ownHardTextPaths], { ease: Power1.easeInOut, duration, drawSVG: "0%" }, ">");
-    }, svgRef.current);
-    return () => context.revert(); 
-  }, [svgRef.current]);
+  // useLayoutEffect(() => {
+  //   const context = gsap.context(() => {
+  //     const tl = gsap.timeline({ repeat: -1, repeatDelay: 1.5 });
+  //     const duration = 0.75;
+  //     const playHardPaths = document.querySelectorAll('#play-hard > path');
+  //     const playHardTextPaths = document.querySelectorAll('#play-hard-text > path');
+  //     const ownHardTextPaths = document.querySelectorAll('#own-hard-text > path');
+  //     const ownHardPaths = document.querySelectorAll('#own-hard > path');
+  //     tl.repeatDelay(1.5);
+  //     tl.to('#pyramid', { ease: Power1.easeInOut, opacity: 1, duration });
+  //     tl.to('#two', { ease: Power1.easeInOut, opacity: 1, duration }, ">");
+  //     tl.to('#three', { ease: Power1.easeInOut, opacity: 1, duration }, ">");
+  //     tl.to('#play-hard', { opacity: 1, ease: Power1.easeInOut, duration, drawSVG: "0%" }, ">");
+  //     tl.from([...playHardPaths], { ease: Power1.easeInOut, duration, drawSVG: "0%" }, "<");
+  //     tl.from([...playHardTextPaths], { ease: Power1.easeInOut, duration, drawSVG: "0%" }, "<");
+  //     tl.to('#dice', { opacity: 1, duration, ease: Power1.easeInOut }, "<" );
+  //     tl.to('#own-hard', { opacity: 1, duration, ease: Power1.easeInOut }, '>');
+  //     tl.from([...ownHardPaths], { duration, ease: Power1.easeInOut, drawSVG: "0%" }, '<');
+  //     tl.from([...ownHardTextPaths], { ease: Power1.easeInOut, duration, drawSVG: "0%" }, ">");
+  //   }, svgRef.current);
+  //   return () => context.revert(); 
+  // }, [svgRef.current]);
 
   return ( <svg
     width={575}
@@ -41,7 +41,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>)=> {
     {...props}
   >
     <g id="own-the-yard-graphic">
-      <g id="pyramid" style={{ opacity: 0 }} >
+      <g id="pyramid" style={{ opacity: 1 }} >
         <ellipse
           id="one"
           cx={21.0532}
@@ -51,7 +51,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>)=> {
           transform="matrix(-1 0 0 1 245.106 177.772)"
           fill="#F1F1F1"
         />
-        <g id="two" style={{ opacity: 0 }}>
+        <g id="two" style={{ opacity: 1 }}>
           <ellipse
             id="Ellipse 35"
             cx={21.0532}
@@ -71,7 +71,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>)=> {
             fill="#F1F1F1"
           />
         </g>
-        <g id="three" style={{ opacity: 0 }}>
+        <g id="three" style={{ opacity: 1 }}>
           <ellipse
             id="Ellipse 28"
             cx={21.0532}
@@ -100,7 +100,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>)=> {
             fill="#F1F1F1"
           />
         </g>
-        <g id="play-hard" style={{ opacity: 0 }}>
+        <g id="play-hard" style={{ opacity: 1 }}>
           <g id="play-hard-text">
             <path
               d="M179.113 129.365L181.925 126.623C182.546 126.017 183.205 125.575 183.901 125.297C184.598 125.008 185.304 124.936 186.02 125.078C186.736 125.221 187.431 125.638 188.106 126.329C188.776 127.016 189.183 127.729 189.327 128.468C189.471 129.207 189.403 129.934 189.121 130.649C188.84 131.353 188.389 132.008 187.768 132.614L186.242 134.102L190.076 138.034L188.791 139.287L179.113 129.365ZM185.193 133.028L186.366 131.884C186.792 131.468 187.117 131.029 187.34 130.567C187.569 130.1 187.647 129.623 187.573 129.137C187.505 128.646 187.237 128.16 186.767 127.679C186.293 127.193 185.819 126.917 185.345 126.852C184.87 126.777 184.404 126.855 183.946 127.087C183.488 127.309 183.046 127.627 182.62 128.043L181.447 129.187L185.193 133.028ZM197.834 130.467L196.519 131.75L186.431 121.407L187.746 120.124L197.834 130.467ZM204.679 123.79L203.506 122.588C203.588 122.752 203.639 123.04 203.659 123.451C203.683 123.857 203.616 124.314 203.456 124.822C203.296 125.32 202.991 125.789 202.54 126.229C201.969 126.786 201.318 127.157 200.588 127.341C199.863 127.52 199.126 127.501 198.376 127.283C197.627 127.056 196.932 126.614 196.291 125.958C195.651 125.301 195.229 124.598 195.026 123.848C194.822 123.088 194.819 122.348 195.016 121.628C195.213 120.898 195.598 120.254 196.169 119.697C196.615 119.262 197.079 118.966 197.561 118.808C198.048 118.646 198.492 118.575 198.893 118.595C199.298 118.61 199.592 118.675 199.774 118.791L198.645 117.634L199.938 116.373L205.957 122.544L204.679 123.79ZM197.584 124.697C198.019 125.143 198.493 125.433 199.006 125.568C199.519 125.704 200.019 125.71 200.506 125.587C200.993 125.455 201.414 125.215 201.77 124.868C202.151 124.496 202.403 124.074 202.528 123.6C202.653 123.126 202.644 122.641 202.502 122.144C202.355 121.643 202.068 121.174 201.643 120.738C201.218 120.302 200.759 120.007 200.266 119.852C199.768 119.692 199.28 119.669 198.804 119.782C198.322 119.89 197.891 120.129 197.51 120.501C197.154 120.848 196.907 121.265 196.767 121.754C196.632 122.237 196.626 122.737 196.748 123.253C196.871 123.77 197.149 124.251 197.584 124.697ZM209.102 117.144L206.331 110.137L207.638 108.862L212.543 122.221L211.22 123.512L209.569 119.021L201.009 115.328L202.339 114.03L209.102 117.144Z"
@@ -127,7 +127,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>)=> {
           />
         </g>
       </g>
-      <g id="dice" style={{ opacity: 0 }}>
+      <g id="dice" style={{ opacity: 1 }}>
         <g >
           <ellipse
             id="Ellipse 35_2"
@@ -186,7 +186,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>)=> {
             fill="#F26D21"
           />
         </g>
-        <g id="own-hard" style={{ opacity: 0 }}>
+        <g id="own-hard" style={{ opacity: 1 }}>
           <path
             id="Vector 251"
             d="M396.553 175.745C388.294 175.745 380.766 170.129 372.429 169.842C369.885 169.754 367.322 169.842 364.776 169.842C362.531 169.842 358.391 173.608 356.504 174.834C349.803 179.19 346.045 189.223 346.045 196.881C346.045 200.72 345.933 203.708 347.357 207.267C349.013 211.408 352.514 214.018 354.901 217.69C359.144 224.218 367.564 225.597 374.652 225.597C382.515 225.597 392.05 225.176 397.865 219.038C402.899 213.725 400.273 202.808 399.87 196.553C399.551 191.622 397.209 187.274 397.209 182.305"

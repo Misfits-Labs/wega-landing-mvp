@@ -24,7 +24,7 @@ export const FloatingOrbs: React.FC<React.AllHTMLAttributes<HTMLDivElement> & Re
   return !children ? (
    <FloatingOrbContainer {...props}>
     <FloatingOrbBlurContainer></FloatingOrbBlurContainer>
-    <div tw="relative flex justify-center items-center w-full h-full" ref={orbContainerRef}>
+    <div tw="relative flex justify-center items-center w-[100vw] h-[100vh]" ref={orbContainerRef}>
       <div className="orb"
       tw="dark:bg-[#C836E0] 
       pointer-events-none 
@@ -41,13 +41,13 @@ export const FloatingOrbs: React.FC<React.AllHTMLAttributes<HTMLDivElement> & Re
       rounded-[100%]
       translate-x-[-15rem] translate-y-[5rem] z-[-26]
       "></div>
-      <div className="orb" tw="
-      dark:bg-oranjo 
-      pointer-events-none 
+      <div className="orb" tw="dark:bg-oranjo 
+      pointer-events-none
       absolute w-[350px] h-[350px] rounded-[100%] 
       translate-x-[15rem] translate-y-[-2.5rem] z-[-25]"></div>
     </div>
-   </FloatingOrbContainer> ) : <FloatingOrbContainer tw="relative mt-[unset] w-[max-content] h-[max-content]" {...props}>
+   </FloatingOrbContainer> 
+  ) : <FloatingOrbContainer tw="relative mt-[unset] w-[max-content] h-[max-content]" {...props}>
       <div tw="absolute flex justify-center items-center w-full h-full" ref={orbContainerRef}>
         <FloatingOrbBlurContainer></FloatingOrbBlurContainer>
         <div className="orb"

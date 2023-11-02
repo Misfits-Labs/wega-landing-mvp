@@ -10,7 +10,7 @@ const LandingPagePlaySection = () => {
  return (
   <Section
    direction='col'
-   tw="mt-[-5rem]"
+   tw="mt-[5rem]"
    hdr={
     <SectionHeaderContainer tw=" flex-col justify-center items-center">
      <SectionHeaderTitle>

@@ -53,7 +53,6 @@ export const NavigationBar = styled.nav`
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1000;
   transition: transform 500ms ease-out 100ms;
 
   &.nav-show {
@@ -70,32 +69,31 @@ export const NavigationBar = styled.nav`
     transform: translateY(-100%);
   }
 
-  &::before, &.nav-mobile .navigation::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 998;
-    opacity: 0;
-    background: ${rgba('#151515', 0.90)};
-    transition: transform 500ms ease-out 60ms;
-  }
+  // &::before, &.nav-mobile .navigation::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   opacity: 0;
+  //   background: ${rgba('#151515', 0.90)};
+  //   transition: transform 500ms ease-out 60ms;
+  //   ${tw`shadow-wega-nav shadow-inner`}
+  // }
 
-  &::after, &.nav-mobile .navigation::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 997;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    ${tw`shadow-wega-nav`}
-    backdrop-filter: blur(5.5rem) opacity(0.85);
-    transition: transform 500ms ease-out 60ms;
-  }
+  // &::after, &.nav-mobile .navigation::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   z-index: 993;
+  //   width: 100%;
+  //   height: 100%;
+  //   opacity: 0;
+  //   backdrop-filter: blur(5.5rem) opacity(0.85);
+  //   transition: transform 500ms ease-out 60ms;
+  // }
 `
 
 // box-shadow: 0rem -3.5rem 1.5rem 5rem var(--background-color);

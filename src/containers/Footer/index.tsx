@@ -32,7 +32,7 @@ const Footer = () => {
               <Brand><Link to="/">Wega</Link></Brand>
             </BrandContainer>
             <div tw="flex flex-col items-center">
-              <NormalText tw="text-[21px] leading-[19px] text-[#D3D3D3] mb-[32px]">Join the playrooms</NormalText>
+              <NormalText tw="text-[21px] leading-[19px] text-[#D3D3D3] mb-[32px]">Learn, follow or inspect us.</NormalText>
               <div tw="flex gap-x-[55px] w-full justify-center mb-[12rem]">
                 <a href="https://wega.gitbook.io/wega-litepaper/" css={hoverStrokeOranjoStyle} target="_blank" tw="w-[44px]" rel="noreferrer">
                 <WhitepaperIcon width="100%" height="100%" />

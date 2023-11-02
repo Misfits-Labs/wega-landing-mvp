@@ -1,12 +1,14 @@
-import { useLayoutEffect } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { gsap, Power3 } from 'gsap';
 
-export function useRoll(diceRef: any,) {  
+export function useRoll(diceRef: any,) { 
+  const [trigger, setStrigger] = useState<boolean>(false);
+  const triggerRoll = () => setStrigger((s: boolean) => !s);
+ 
   function roll() {
     gsap.set("g#all-sides", {y: "0"})
     const tl = gsap.timeline();
     tl.to("g#all-sides", {
-      repeat: -1,
       duration: 2,
       repeatDelay: 1,
       ease: Power3.easeInOut,
@@ -18,5 +20,7 @@ export function useRoll(diceRef: any,) {
      roll();
     }, diceRef);
     return () => ctx.revert();
-  }, []);
+  }, [trigger]);
+
+  return triggerRoll;
 }
