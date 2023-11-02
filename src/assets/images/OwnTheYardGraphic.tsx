@@ -10,7 +10,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>)=> {
   const svgRef = useRef<any>(null);
   useLayoutEffect(() => {
     const context = gsap.context(() => {
-      const tl = gsap.timeline();
+      const tl = gsap.timeline({ repeat: -1, repeatDelay: 1.5 });
       const duration = 0.75;
       const playHardPaths = document.querySelectorAll('#play-hard > path');
       const playHardTextPaths = document.querySelectorAll('#play-hard-text > path');
@@ -27,7 +27,6 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>)=> {
       tl.to('#own-hard', { opacity: 1, duration, ease: Power1.easeInOut }, '>');
       tl.from([...ownHardPaths], { duration, ease: Power1.easeInOut, drawSVG: "0%" }, '<');
       tl.from([...ownHardTextPaths], { ease: Power1.easeInOut, duration, drawSVG: "0%" }, ">");
-      tl.repeat(-1);
     }, svgRef.current);
     return () => context.revert(); 
   });

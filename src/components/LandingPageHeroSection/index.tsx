@@ -19,23 +19,24 @@ const LandingPageHeroSection = () => {
       direction='col'
       tw="relative"
       hdr={
-        <SectionHeaderContainer tw="flex-col items-center">
-        <SectionHeaderTitleLarge>
-          {"NFTs' Playground"}<span tw="text-oranjo">.</span>
+        // 41.314px 24.788px 24.788px 24.788px
+        <SectionHeaderContainer tw="flex-col items-center ">
+        <SectionHeaderTitleLarge tw="max-w-[803px] font-primary leading-[68px]">
+          {"Your NFTs’ Favourite Playground"}<span tw="text-oranjo">.</span>
           </SectionHeaderTitleLarge>
         </SectionHeaderContainer>
       }>
-      <PlayGameContainer>
-      <div tw="flex gap-x-[25px] items-center justify-center">
-        <LeftPlayerCard />
-        <Dice diceRef={diceRef} />
-        <RightPlayerCard />
-      </div>
-      <Link to="http://35.208.209.92:8080/#/">
-        <Button buttonType="primary" tw="flex justify-center items-center">
-          Play Beta
-        </Button>
-      </Link>
+      <PlayGameContainer tw="flex flex-col gap-[20.66px]">
+        <div tw="flex gap-x-[20.657px] items-center justify-center">
+          <LeftPlayerCard />
+          <Dice diceRef={diceRef} />
+          <RightPlayerCard />
+        </div>
+        <Link to="http://35.208.209.92:8080/#/">
+          <Button buttonType="primary" tw="font-secondary py-[9.92px] px-[19.83px] min-w-[162px] min-h-[35px]">
+            Play Beta
+          </Button>
+        </Link>
       </PlayGameContainer>
       <SectionHeader tw="w-full text-center pt-[32px]">Play multiple P2P betting games with your NFTs.</SectionHeader>
       </Section>

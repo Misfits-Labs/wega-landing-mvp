@@ -40,6 +40,9 @@ export default {
       fontFamily: {
         'primary': [
           'League Spartan',
+        ],
+        'secondary': [
+          'Poppins',
         ]
       },
       opacity: {

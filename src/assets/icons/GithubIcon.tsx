@@ -1,16 +1,10 @@
 
 import { SVGProps } from "react"
-import tw, { css } from 'twin.macro';
 
 interface GithubIconProps extends SVGProps<SVGSVGElement>, React.Attributes {} 
 
 const GithubIcon = (props: GithubIconProps) => {
-  const hoverStrokeOranjoStyle = css`
-    &:hover > path {
-      border-color: black;
-      ${tw`stroke-oranjo`}
-    }
-  `
+
   return ( <svg
       width={24}
       height={24}
@@ -19,7 +13,6 @@ const GithubIcon = (props: GithubIconProps) => {
       xmlns="http://www.w3.org/2000/svg"
       className="icon"
       // eslint-disable-next-line react/no-unknown-property
-      css={hoverStrokeOranjoStyle}
       {...props}
     >
       

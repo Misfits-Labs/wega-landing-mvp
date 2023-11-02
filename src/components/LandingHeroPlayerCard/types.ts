@@ -2,14 +2,12 @@ import tw, { styled } from 'twin.macro';
 
 export const PlayerCardContainer = styled.div`
  display: flex;
- width: 320px;
- height: 240px;
- max-width: 320px;
- padding: 20px 40px;
+ min-height: 231.356px; 
+ padding: 16.525px 33.051px; 
  flex-direction: column;
  justify-content: center;
- align-items: center;
- gap: 20px;
+ align-items: flex-start;
+ gap: 16.525px; 
  position: relative;
  border-radius: 10px;
  ${tw`border border-[2px] dark:border-shinishi`}

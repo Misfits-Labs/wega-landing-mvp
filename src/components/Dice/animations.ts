@@ -10,7 +10,7 @@ export function useRoll(diceRef: any,) {
       duration: 2,
       repeatDelay: 1,
       ease: Power3.easeInOut,
-      y: "500",
+      y: "-500",
     })
   }
   useLayoutEffect(()=> {
@@ -20,7 +20,3 @@ export function useRoll(diceRef: any,) {
     return () => ctx.revert();
   }, []);
 }
-
-
-
-// transform: translateY(69px);

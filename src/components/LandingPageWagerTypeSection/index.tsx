@@ -5,21 +5,19 @@ import { OrIcon } from '../../assets/images'
 import wagerTypeSource from '../../assets/images/wager-types.png'
 import wagerCurrenciesSource from '../../assets/images/wager-currencies.png'
 import 'twin.macro';
-
 const LandingPageWagerTypeSection = () => {
  return (
   <Section
    direction='col'
    tw="mt-[10rem]"
-
    hdr={
-    <SectionHeaderContainer tw="flex-col justify-center items-center">
+    <SectionHeaderContainer tw="flex-col justify-center items-center mb-[67px]">
      <SectionHeaderTitle>
       Every Asset can sit at this table
       </SectionHeaderTitle>
      </SectionHeaderContainer>
    }>
-   <div tw='flex flex-col md:flex-row gap-[54px] h-[370px] justify-center items-center mt-[5rem]'>
+   <div tw='flex flex-col md:flex-row gap-[54px] h-[370px] justify-center items-center '>
     <div tw='flex flex-col items-center gap-[24px] h-full w-[50%]'>
       <div tw='w-full flex items-center justify-around mb-[-60px] md:mb-0'>
        <img src={wagerCurrenciesSource} alt="wager currencies"/>
