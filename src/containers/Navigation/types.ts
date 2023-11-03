@@ -19,14 +19,14 @@ export const Brand = styled.div`
  &:focus, &:hover {
   unset;
  }
- span {
-  ${tw`text-shinishi dark:text-shinishi`}
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 19px;
-  text-align: center;
-  margin-left: toRem(10, $font-base);
- }
+//  span {
+//   ${tw`text-shinishi dark:text-shinishi`}
+//   font-weight: 400;
+//   font-size: 21px;
+//   line-height: 19px;
+//   text-align: center;
+//   margin-left: toRem(10, $font-base);
+//  }
 `
 
 export const NavigationLinksContainer = styled.div`
@@ -68,32 +68,4 @@ export const NavigationBar = styled.nav`
   &.nav-hide {
     transform: translateY(-100%);
   }
-
-  // &::before, &.nav-mobile .navigation::before {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   opacity: 0;
-  //   background: ${rgba('#151515', 0.90)};
-  //   transition: transform 500ms ease-out 60ms;
-  //   ${tw`shadow-wega-nav shadow-inner`}
-  // }
-
-  // &::after, &.nav-mobile .navigation::after {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   z-index: 993;
-  //   width: 100%;
-  //   height: 100%;
-  //   opacity: 0;
-  //   backdrop-filter: blur(5.5rem) opacity(0.85);
-  //   transition: transform 500ms ease-out 60ms;
-  // }
 `
-
-// box-shadow: 0rem -3.5rem 1.5rem 5rem var(--background-color);

@@ -8,6 +8,7 @@ import {
   NavigationBar
 } from './types';
 import { useAnimateNav } from '../../hooks';
+import Button from '../../components/Button';
 import 'twin.macro'
 
 const Navigation = () => {
@@ -24,11 +25,9 @@ const Navigation = () => {
           </BrandContainer>
         </NavigationLinksContainer>
         <div>
-        {/* <Link to="http://35.208.209.92:8080/#/">
           <Button buttonType="primary" tw="flex justify-center items-center w-[max-content]">
-            Play Beta
+            Coming soon
           </Button>
-        </Link> */}
         </div>
       </div>
     <div tw="absolute top-0 right-0 w-full h-full opacity-[0.85] bg-pretu z-[750] shadow-wega-nav transition-wega-nav shadow-inner"></div> {/** box-shadow container */}

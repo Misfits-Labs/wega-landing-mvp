@@ -7,11 +7,13 @@ import { FloatingOrbs } from '../../common/FloatingOrbs';
 import Button from "../Button";
 import { Dice } from "../Dice";
 import { useRoll } from "../Dice/animations";
+import { useMediaQuery } from '../../hooks';
 import 'twin.macro';
 
 const LandingPageHeroSection = () => {
   const diceRef = useRef<any>(null);
   const triggerDice = useRoll(diceRef);
+  const { isMobile } = useMediaQuery();
   return (
     <>
       <FloatingOrbs tw="translate-y-[-32%] flex justify-center items-center" />
@@ -21,7 +23,7 @@ const LandingPageHeroSection = () => {
         hdr={
           <SectionHeaderContainer tw="flex-col items-center ">
           <SectionHeaderTitleLarge tw="max-w-[803px] font-primary leading-[68px]">
-            {"Your NFTs’ Favourite Playground"}<span tw="text-oranjo">.</span>
+            {isMobile ? "Your NFTs’ Playground" : "Your NFTs’ Favourite Playground"}<span tw="text-oranjo">.</span>
             </SectionHeaderTitleLarge>
           </SectionHeaderContainer>
         }>
@@ -34,8 +36,6 @@ const LandingPageHeroSection = () => {
             <Button buttonType="primary" tw="font-secondary py-[9.92px] px-[19.83px] min-w-[162px] min-h-[35px]" onClick={() => triggerDice()}>
               Roll
             </Button>
-          {/* <Link to="http://35.208.209.92:8080/#/">
-          </Link> */}
         </PlayGameContainer>
         <SectionHeader tw="w-full text-center pt-[32px]">Play multiple P2P betting games with your NFTs.</SectionHeader>
       </Section>
