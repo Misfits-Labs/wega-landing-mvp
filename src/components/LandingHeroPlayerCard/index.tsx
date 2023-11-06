@@ -3,6 +3,8 @@ import leftAvatarSource from  '../../assets/images/hero-left-player-image.png';
 import rightAvatarSource from  '../../assets/images/hero-right-player-image.png';
 import leftWidget from  '../../assets/images/hero-left-widget.png';
 import rightWidget from  '../../assets/images/hero-right-widget.png';
+import rightWidgetImage from  '../../assets/images/landing-hero-right-widget-mobile-image.png';
+import leftWidgetImage from  '../../assets/images/landing-hero-left-widget-mobile-image.png';
 
 import { 
   PlayerCardContainer, 
@@ -29,7 +31,33 @@ export const LeftPlayerCard = () => {
           <img src={leftWidget} alt="left-wager"/>
         </div>
       </div>
-      <SmallText tw="text-blanc text-left w-full font-light leading-[7.5px]">Launch the app to start</SmallText>
+      {/* <SmallText tw="text-blanc text-left w-full font-light leading-[7.5px]">Launch the app to start</SmallText> */}
+    </PlayerCardContainer>
+  )
+}
+export const LeftPlayerCardMobile = () => {
+  return  (
+    <PlayerCardContainer tw="flex flex-row justify-end min-w-[261.36px] min-h-[unset] gap-x-[10px] p-[8px] rounded-[8px] border border-[1px] border-shinishi">
+      <div tw="flex h-full flex-col gap-y-[10px] items-end justify-center">
+        <NormalText tw="font-primary">#392</NormalText>
+        <SmallText tw="font-primary">BAYC</SmallText>
+        <NormalText tw="font-primary">38.1 ETH</NormalText>
+        <SmallText tw="font-primary">(~73.00 USD)</SmallText>
+      </div>  
+      <img src={leftWidgetImage} alt="left-wager"/>
+    </PlayerCardContainer>
+  )
+}
+export const RightPlayerCardMobile = () => {
+  return  (
+    <PlayerCardContainer tw="flex flex-row justify-start min-w-[261.36px] min-h-[unset] gap-x-[10px] p-[8px] rounded-[8px] border border-[1px] border-shinishi">
+      <img src={rightWidgetImage} alt="left-wager"/>
+      <div tw="flex flex-col h-full gap-y-[10px] items-start justify-center">
+        <NormalText tw="font-primary">#392</NormalText>
+        <SmallText tw="font-primary">Noun</SmallText>
+        <NormalText tw="font-primary">38.0 ETH</NormalText>
+        <SmallText tw="font-primary">(~73.200 USD)</SmallText>
+      </div>  
     </PlayerCardContainer>
   )
 }
@@ -51,7 +79,7 @@ export const RightPlayerCard = () => {
           <img src={rightWidget} alt="right-wager"/>
         </div>
       </div>
-      <SmallText tw="text-blanc text-left w-full font-light leading-[7.5px]">Awaiting opponent</SmallText>
+      {/* <SmallText tw="text-blanc text-left w-full font-light leading-[7.5px]">Awaiting opponent</SmallText> */}
     </PlayerCardContainer>
   )
 }

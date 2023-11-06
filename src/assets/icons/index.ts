@@ -33,3 +33,4 @@ export { default as RestartIcon } from './RestartIcon';
 export { default as DownloadIcon } from './DownloadIcon';
 export { default as XIcon } from './XIcon'
 export { default as TelegramIcon } from './TelegramIcon'
+export { default as VersusIcon } from './VersusIcon'

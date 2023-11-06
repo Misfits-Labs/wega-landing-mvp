@@ -24,3 +24,21 @@ export function useRoll(diceRef: any,) {
 
   return triggerRoll;
 }
+
+export function useAutoRoll(diceRef: any,) { 
+  function roll() {
+    const tl = gsap.timeline();
+    tl.to("g#all-sides", {
+      repeatDelay: 1.5,
+      repeat: -1,
+      ease: Power3.easeInOut,
+      y: "-500",
+    })
+  }
+  useLayoutEffect(()=> {
+   const ctx = gsap.context(() => {
+     roll();
+    }, diceRef);
+    return () => ctx.revert();
+  });
+}

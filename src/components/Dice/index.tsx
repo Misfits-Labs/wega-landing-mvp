@@ -1,11 +1,21 @@
+import { SVGProps } from 'react';
 import { DiceContainer } from './types';
 import WegaDice from './images/WegaDice'; 
 import "twin.macro";
 
-export const Dice: React.FC<{ diceRef: any }> = ({ diceRef }: { diceRef: any }) => {
+type DiceProps = {
+  diceRef: any;
+  svgProps?: SVGProps<SVGSVGElement>;
+} & React.Attributes & React.AllHTMLAttributes<HTMLDivElement>
+
+export const Dice: React.FC<DiceProps> = ({ 
+  diceRef,
+  svgProps,
+  ...props 
+}: DiceProps) => {
   return (
-    <DiceContainer>
-      <WegaDice ref={diceRef} />
+    <DiceContainer { ...props }>
+      <WegaDice ref={diceRef} { ...svgProps } />
     </DiceContainer>
   )
 }

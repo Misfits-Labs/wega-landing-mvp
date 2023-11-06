@@ -50,8 +50,7 @@ export default {
       },
       boxShadow: {
         'wega-nav': '0rem -3.5rem 1.5rem 5rem #151515',
-    // box-shadow: 0rem -3.5rem 1.5rem 5rem var(--background-color);
-
+        'primary-button': '0px 10.74153px 16.52542px 0px rgba(0, 0, 0, 0.30)'
       },
       animation: {
         'rotate-orbs': 'rotate-orbs 10s linear 5s infinite',
