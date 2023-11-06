@@ -23,7 +23,7 @@ const LandingPageOwnTheYardSection = () => {
  return (
   <Section
    direction="col"
-   tw="px-5 w-full mt-[16rem] gap-y-[54px] overflow-x-hidden"
+   tw="px-5 w-full md:mt-[7.5rem] gap-y-[54px] overflow-x-hidden"
    hdr={
     <SectionHeaderContainer tw="flex-col justify-center items-center">
      <SectionHeaderTitle>Play Hard, Own the Yard</SectionHeaderTitle>
@@ -33,13 +33,13 @@ const LandingPageOwnTheYardSection = () => {
     </SectionHeaderContainer>
    }
   >
-   <div tw="self-center mr-[7.5rem]">
+   <div tw="self-center mb-[1rem] md:mb-[30px] mr-[4rem]">
     <OwnTheYardGraphic />
    </div>
    {/* gradient banner */}
    <HoveringOrbs
     isHovering={isHoveringOnGradientBackground}
-    tw="relative h-[102px] w-[75%] self-center z-auto rounded-[25px]"
+    tw="relative h-[102px] mt-[1rem] w-[75%] self-center z-auto rounded-[25px]"
     onMouseEnter={() => handleGradientBackgroundHover("enter")}
     onMouseLeave={() => handleGradientBackgroundHover("leave")}
    >
