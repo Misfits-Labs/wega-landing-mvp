@@ -52,7 +52,7 @@ const LandingPageOwnTheYardSection = () => {
      </div>
      <div tw="h-full flex items-center">
       <a
-       tw="mt-[5px] border border-[2px] border-blanc rounded-[5px] flex block gap-x-[10px] py-[12px] px-[24px]"
+       tw="w-[max-content] mt-[5px] border border-[2px] border-blanc rounded-[5px] flex block gap-x-[10px] py-[12px] px-[24px]"
        href="https://wega.gitbook.io/wega-litepaper/"
        target="_blank"
        rel="noreferrer"
