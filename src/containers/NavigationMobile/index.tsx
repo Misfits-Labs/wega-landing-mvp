@@ -47,7 +47,7 @@ export const NavigationMobile = () => {
 
   return (
    <>
-    <NavigationBar tw="fixed font-primary z-[700]">
+    <NavigationBar tw="fixed font-primary z-[755]">
      <div tw="container dark:text-blanc flex items-center relative z-[inherit]">
        <NavigationLinksContainer tw="box-border flex w-full gap-x-[30px]">
          <BrandContainer tw="mb-[4px] py-[20px]">
@@ -57,8 +57,9 @@ export const NavigationMobile = () => {
        <div tw="flex items-end w-[22px]" onClick={toggleNav} ><HamburgerIcon /></div>
      </div>
 
-    <div tw="absolute top-0 right-0 w-full h-full opacity-[0.85] bg-pretu z-[695] shadow-wega-nav transition-wega-nav shadow-inner"></div> {/** box-shadow container */}
-    <div tw="absolute top-0 right-0 w-full h-full z-[690] transition-wega-nav backdrop-blur-[20rem] backdrop-opacity-[0.97]"></div>
+    {/* <div tw="absolute top-0 right-0 w-full h-full opacity-[0.85] bg-pretu z-[695] shadow-wega-nav transition-wega-nav shadow-inner"></div>  */}
+    {/** box-shadow container */}
+    {/* <div tw="absolute top-0 right-0 w-full h-full z-[690] transition-wega-nav backdrop-blur-[20rem] backdrop-opacity-[0.97]"></div> */}
    </NavigationBar>
    <div ref={mobileLinksContainerRef} tw="z-[800] fixed top-0 w-full flex flex-col items-center translate-y-[-25rem]">
      <div tw="relative flex flex-col mx-auto w-[385px] z-[inherit]">

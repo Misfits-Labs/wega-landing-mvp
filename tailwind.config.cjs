@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 /** @type {import('tailwindcss').Config} */
 // import defaultTheme from 'tailwindcss/defaultTheme'
 
@@ -62,7 +64,7 @@ export default {
         }
       },
       transitionProperty: {
-        'wega-nav': 'transform 500ms ease-out 60ms',
+        'wega-nav': 'translate 500ms ease-out 60ms',
       }
     },
     container: {
@@ -73,5 +75,8 @@ export default {
     }
   },
   darkMode: 'class',
-  plugins: [],
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
 }

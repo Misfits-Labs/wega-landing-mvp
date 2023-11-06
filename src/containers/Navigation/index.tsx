@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unknown-property */
+
 import { Link } from 'react-router-dom';
 import { LogoDarkWo } from '../../assets/images';
 import { 
@@ -30,8 +31,9 @@ const Navigation = () => {
           </Button>
         </div>
       </div>
-    <div tw="absolute top-0 right-0 w-full h-full opacity-[0.85] bg-pretu z-[750] shadow-wega-nav transition-wega-nav shadow-inner"></div> {/** box-shadow container */}
-    <div tw="absolute top-0 right-0 w-full h-full z-[745] transition-wega-nav backdrop-blur-[20rem] backdrop-opacity-[0.97]"></div>
+    {/* <div tw="absolute top-0 right-0 w-full h-full opacity-[0.85] bg-pretu z-[750] shadow-wega-nav shadow-inner"></div>  */}
+    {/** box-shadow container */}
+    {/* <div tw="absolute top-0 right-0 w-full h-full z-[745] backdrop-blur-[10rem] backdrop-brightness-[0.6] backdrop-opacity-95"></div> */}
     </NavigationBar>
   )
 }

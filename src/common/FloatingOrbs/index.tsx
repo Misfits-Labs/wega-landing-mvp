@@ -22,17 +22,19 @@ export const FloatingOrbs: React.FC<React.AllHTMLAttributes<HTMLDivElement> & Re
   });
 
   return !children ? (
-   <FloatingOrbContainer {...props}>
-    <FloatingOrbBlurContainer></FloatingOrbBlurContainer>
+   <FloatingOrbContainer tw="overflow-clip" {...props}>
+    <FloatingOrbBlurContainer />
     <div tw="relative flex justify-center items-center w-full sm:w-[100vw] sm:h-[100vh]" ref={orbContainerRef}>
       <div className="orb" tw="dark:bg-[#C836E0] 
-      pointer-events-none 
+      pointer-events-none
+      blur-[75px] 
       absolute w-[350px] h-[350px] 
       rounded-[100%]
       translate-x-[5rem] translate-y-[5rem] z-[-27]"
       ></div>
       <div className="orb" tw="
       dark:bg-[#B80D57] 
+      blur-[75px]
       pointer-events-none 
       absolute 
       w-[350px] 
@@ -42,6 +44,7 @@ export const FloatingOrbs: React.FC<React.AllHTMLAttributes<HTMLDivElement> & Re
       "></div>
       <div className="orb" tw="dark:bg-oranjo 
       pointer-events-none
+      blur-[75px]
       absolute w-[350px] h-[350px] rounded-[100%] 
       translate-x-[15rem] translate-y-[-2.5rem] z-[-25]"></div>
     </div>

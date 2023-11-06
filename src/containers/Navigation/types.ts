@@ -60,10 +60,33 @@ export const NavigationBar = styled.nav`
       opacity: 0.95;
     }
     &::before {
-      opacity: 0.85;
+      opacity: 0.99;
     }
   }
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    ${tw`bg-opacity-[0.99] bg-pretu z-[750] blur-[1rem] shadow-wega-nav`}
+    opacity: 0;
+    transition: all 500ms ease-out 60ms;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    ${tw`z-[745] blur-[10rem] bg-pretu`}
+    transition: all 500ms ease-out 60ms;
+  }
   &.nav-hide {
     transform: translateY(-100%);
   }
