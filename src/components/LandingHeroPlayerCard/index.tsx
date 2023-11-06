@@ -71,7 +71,7 @@ export const RightPlayerCard = () => {
           ensImage={rightAvatarSource}
           size={26.5} 
         />
-        <NormalText>0000.eth</NormalText>
+        <NormalText>Jared.eth</NormalText>
       </PlayerAvatarWrapper>
       <div tw="flex flex-col gap-y-[16px] items-center w-full">
         <NormalText tw="text-shinishi text-left w-full">Wager: </NormalText>

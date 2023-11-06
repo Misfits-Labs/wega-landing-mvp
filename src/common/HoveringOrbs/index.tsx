@@ -58,6 +58,7 @@ const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...pr
         tw="dark:bg-[#C836E0] 
         pointer-events-none 
         absolute w-[350px] h-[350px]
+        blur-[75px]
         left-[12rem]
         rounded-[100%]
         z-[-27]"
@@ -66,6 +67,7 @@ const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...pr
         dark:bg-[#B80D57] 
         pointer-events-none 
         absolute 
+        blur-[75px]
         w-[350px] 
         h-[350px] 
         rounded-[100%]
@@ -73,7 +75,8 @@ const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...pr
         "></div>
         <div className="orb" tw="
         dark:bg-oranjo 
-        pointer-events-none 
+        pointer-events-none
+        blur-[75px] 
         absolute w-[350px] h-[350px] rounded-[100%] 
         left-[3rem] z-[-25]"></div>
       </div>

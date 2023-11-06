@@ -44,7 +44,7 @@ const LandingPageOwnTheYardSection = () => {
     onMouseLeave={() => handleGradientBackgroundHover("leave")}
    >
     <div tw="border border-[2px] border-blanc relative w-full h-full flex flex-row items-center justify-center px-[35px] rounded-[25px]">
-     <div tw="flex flex-col ">
+     <div tw="flex flex-col sm:mr-[3rem]">
       <LargeText>Powered by Wega Protocol</LargeText>
       <NormalText tw="text-[21px] leading-[19px] text-blanc">
        The leading NFT betting protocol aimed at expanding NFT use cases across different platforms.
