@@ -47,7 +47,7 @@ export const NavigationMobile = () => {
 
   return (
    <>
-    <NavigationBar tw="relative font-primary z-[700]">
+    <NavigationBar tw="fixed font-primary z-[700]">
      <div tw="container dark:text-blanc flex items-center relative z-[inherit]">
        <NavigationLinksContainer tw="box-border flex w-full gap-x-[30px]">
          <BrandContainer tw="mb-[4px] py-[20px]">
