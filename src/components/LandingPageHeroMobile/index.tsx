@@ -14,7 +14,7 @@ const LandingPageHeroMobile = () => {
  return (
   <div tw="relative flex flex-col items-center mt-[85px]" >
    <VersusIcon tw="relative top-0 mt-[-3rem] mx-auto mb-[-1.5rem] z-[20]" />
-   <div tw="relative flex gap-x-[8.5px] self-center">
+   <div tw="relative flex gap-x-[8.5px] self-center ">
     <LeftPlayerCardMobile />
     <RightPlayerCardMobile />
    </div>

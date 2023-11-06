@@ -37,8 +37,8 @@ export const LeftPlayerCard = () => {
 }
 export const LeftPlayerCardMobile = () => {
   return  (
-    <PlayerCardContainer tw="flex flex-row justify-end min-w-[261.36px] min-h-[unset] gap-x-[10px] p-[8px] rounded-[8px] border border-[1px] border-shinishi">
-      <div tw="flex h-full flex-col gap-y-[10px] items-end justify-center">
+    <PlayerCardContainer tw="flex flex-row justify-end  min-h-[unset] gap-x-[10px] p-[8px] rounded-[8px] border border-[1px] border-shinishi">
+      <div tw="flex h-full flex-col gap-y-[10px] items-end justify-center w-[261.36px]">
         <NormalText tw="font-primary">#392</NormalText>
         <SmallText tw="font-primary">BAYC</SmallText>
         <NormalText tw="font-primary">38.1 ETH</NormalText>
@@ -50,9 +50,9 @@ export const LeftPlayerCardMobile = () => {
 }
 export const RightPlayerCardMobile = () => {
   return  (
-    <PlayerCardContainer tw="flex flex-row justify-start min-w-[261.36px] min-h-[unset] gap-x-[10px] p-[8px] rounded-[8px] border border-[1px] border-shinishi">
+    <PlayerCardContainer tw="flex flex-row justify-start min-h-[unset] gap-x-[10px] p-[8px] rounded-[8px] border border-[1px] border-shinishi">
       <img src={rightWidgetImage} alt="left-wager"/>
-      <div tw="flex flex-col h-full gap-y-[10px] items-start justify-center">
+      <div tw="flex flex-col h-full gap-y-[10px] items-start justify-center w-[261.36px]">
         <NormalText tw="font-primary">#392</NormalText>
         <SmallText tw="font-primary">Noun</SmallText>
         <NormalText tw="font-primary">38.0 ETH</NormalText>

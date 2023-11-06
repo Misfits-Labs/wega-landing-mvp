@@ -7,7 +7,7 @@ import LandingPageHeroMobile from "../LandingPageHeroMobile";
 const LandingPageHeroSectionMobile = () => {
   return (
     <>
-      <FloatingOrbs tw="translate-y-[-32%] flex justify-center items-center" />
+      <FloatingOrbs tw="translate-y-[-40%] flex justify-center items-center overflow-x-hidden"/>
         <Section
         direction='col'
         tw="relative w-full"

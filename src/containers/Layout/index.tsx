@@ -11,6 +11,7 @@ import 'twin.macro';
 import Navigation from '../Navigation'
 import { useMediaQuery } from '../../hooks';
 import Footer from '../Footer';
+import FooterMobile from '../FooterMobile';
 
 
 const Layout = () => {
@@ -39,7 +40,7 @@ const Layout = () => {
       </div>
       { isMobile ? <NavigationMobile /> : <Navigation /> }
         <Outlet />
-      <Footer />
+      { isMobile ? <FooterMobile /> : <Footer /> }
       <ScrollRestoration getKey={getKey} />
       <div id="wega-overlay" tw="absolute top-[-10rem] h-[450vh] w-full bg-pretu bg-opacity-60 z-[701] hidden"></div>
     </>

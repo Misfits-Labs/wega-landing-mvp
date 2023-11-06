@@ -65,11 +65,11 @@ export const NavigationMobile = () => {
       <div tw="relative border border-[2px] border-shinishi w-full h-full flex flex-col items-center z-[inherit] gap-y-[15px] pt-[10px] pt-[10px] pb-[20px] rounded-[5px]">
        <DeleteCircleIcon color={"#FDFDFD"} tw="self-end mr-[20px]" onClick={toggleNav} />
        <div tw="relative w-full h-full flex flex-col items-center z-[inherit] gap-y-[20px]">
-        <Link to="#" tw="w-full text-center"><NormalText tw="font-primary text-[21px] leading-[19px]">Docs</NormalText></Link>
-        <Link to="#" tw="w-full text-center"><NormalText tw="font-primary text-[21px] leading-[19px]">X</NormalText></Link>
-        <Link to="#" tw="w-full text-center"><NormalText tw="font-primary text-[21px] leading-[19px]">Telegram</NormalText></Link>
-        <Link to="#" tw="w-full text-center"><NormalText tw="font-primary text-[21px] leading-[19px]">Github</NormalText></Link>
-        <Link to="#" tw="w-full text-center"><NormalText tw="font-primary text-[21px] leading-[19px] text-transparent dark:bg-gradient-to-r from-oranjo-blanc to-oranjo  bg-clip-text">Play Beta</NormalText></Link>
+        <Link to="https://wega.gitbook.io/wega-litepaper/" tw="w-full text-center"><NormalText tw="font-primary text-[21px] leading-[19px]">Docs</NormalText></Link>
+        <Link to="https://twitter.com/PlayWega" tw="w-full text-center"><NormalText tw="font-primary text-[21px] leading-[19px]">X</NormalText></Link>
+        <Link to="https://t.me/playwega" tw="w-full text-center"><NormalText tw="font-primary text-[21px] leading-[19px]">Telegram</NormalText></Link>
+        <Link to="https://github.com/Misfits-Labs" tw="w-full text-center"><NormalText tw="font-primary text-[21px] leading-[19px]">Github</NormalText></Link>
+        <Link to="https://app.wega.fun/3/" tw="w-full text-center"><NormalText tw="font-primary text-[21px] leading-[19px] text-transparent dark:bg-gradient-to-r from-oranjo-blanc to-oranjo  bg-clip-text">Play Beta</NormalText></Link>
        </div>
       </div>
       <div tw="absolute top-0 right-0 w-full h-full z-[795] transition-wega-nav backdrop-blur-[15px] backdrop-opacity-[1] rounded-[5px]">

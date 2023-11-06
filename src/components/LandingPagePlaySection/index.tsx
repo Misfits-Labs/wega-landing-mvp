@@ -10,16 +10,16 @@ const LandingPagePlaySection = () => {
  return (
   <Section
    direction='col'
-   tw="mt-[5rem]"
+   tw="mt-[5rem] w-full"
    hdr={
-    <SectionHeaderContainer tw=" flex-col justify-center items-center">
+    <SectionHeaderContainer >
      <SectionHeaderTitle>
-      All fun & Games
+      All fun & Games<span tw="text-oranjo">.</span>
       </SectionHeaderTitle>
-      <SectionHeaderSubtitle>Use your NFTs as a ticket to your next big win</SectionHeaderSubtitle>
+      <SectionHeaderSubtitle tw="text-[#F1F1EF] w-full text-left sm:text-center">Use your NFTs as a ticket to your next big win</SectionHeaderSubtitle>
      </SectionHeaderContainer>
    }>
-   <div tw="container mx-auto p-0 flex flex-row justify-center items-center gap-[32px]">
+   <div tw="container mx-auto p-0 flex flex-col sm:flex-row justify-center items-center gap-[32px]">
      <DiceGameCard />
      <CoinFlipGameCard />
      <RaffleGameCard />
@@ -28,3 +28,5 @@ const LandingPagePlaySection = () => {
  )
 }
 export default LandingPagePlaySection;
+
+{/* <SectionHeader tw="w-full text-center pt-[32px]">Play multiple P2P betting games with your NFTs.</SectionHeader>  */}

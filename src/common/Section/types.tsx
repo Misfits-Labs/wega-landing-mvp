@@ -22,11 +22,9 @@ export const SectionHeader = styled.span`
   font-family: League Spartan;
 `
 export const SectionHeaderSubtitle = styled.span`
-  font-family: League Spartan;
-  font-size: 21px;
+  ${tw`font-primary text-start sm:text-center text-[21px] leading-[19px]`}
   font-style: normal;
   font-weight: 400;
-  line-height: 19px; /* 90.476% */ 
 `
 
 export const SectionHeaderTitleLarge = styled.span`
@@ -39,16 +37,10 @@ export const SectionHeaderTitleLarge = styled.span`
   justify-content: center;
 `
 export const SectionHeaderContainer = styled.div`
-  margin-bottom: 48px;
-  height: calc(var(--font-size) * 1.5);
-  display: flex;
+  ${tw`font-normal w-full flex flex-col items-start sm:items-center justify-center h-[max-content] gap-y-[16px] sm:gap-y-[24px]`}
 `
 export const SectionHeaderTitle = styled.span`
-  --font-size: 51px;
+  ${tw`text-[38px] sm:text-[51px] leading-[35px] sm:leading-[47px] text-left sm:text-center`}
   font-style: normal;
   font-weight: 600;
-  line-height: 47px
-  text-align: center;
-  font-size: var(--font-size);
-  line-height: calc(var(--font-size) * 1.5);
   justify-content: center;`
