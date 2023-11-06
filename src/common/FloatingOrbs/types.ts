@@ -14,3 +14,14 @@ export const FloatingOrbBlurContainer = styled.div`
   ${tw`z-[-21] bg-pretu bg-opacity-[0.3]`}
   ${tw`backdrop-blur-[80px]`}
 `
+
+export const FloatingOrbBlurContainerWithoutBackdrop = styled.div`
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  ${tw`z-[-21] bg-pretu bg-opacity-[0.3]`}
+`

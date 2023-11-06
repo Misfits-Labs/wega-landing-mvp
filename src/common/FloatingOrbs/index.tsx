@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from 'react';
-import { FloatingOrbContainer, FloatingOrbBlurContainer } from './types';
+import { FloatingOrbContainer, FloatingOrbBlurContainer, FloatingOrbBlurContainerWithoutBackdrop } from './types';
 import { gsap, Sine } from 'gsap';
 import "twin.macro"
 // interface FloatingOrbsProps {} 
@@ -23,7 +23,7 @@ export const FloatingOrbs: React.FC<React.AllHTMLAttributes<HTMLDivElement> & Re
 
   return !children ? (
    <FloatingOrbContainer tw="overflow-clip" {...props}>
-    <FloatingOrbBlurContainer />
+    <FloatingOrbBlurContainerWithoutBackdrop></FloatingOrbBlurContainerWithoutBackdrop>
     <div tw="relative flex justify-center items-center w-full sm:w-[100vw] sm:h-[100vh]" ref={orbContainerRef}>
       <div className="orb" tw="dark:bg-[#C836E0] 
       pointer-events-none
