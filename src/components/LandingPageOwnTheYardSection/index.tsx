@@ -23,7 +23,7 @@ const LandingPageOwnTheYardSection = () => {
  return (
   <Section
    direction="col"
-   tw="px-5 w-full md:mt-[7.5rem] gap-y-[54px] overflow-x-hidden"
+   tw="px-5 w-full md:mt-[7.5rem] gap-y-[54px] z-[inherit]"
    hdr={
     <SectionHeaderContainer tw="flex-col justify-center items-center">
      <SectionHeaderTitle>Play Hard, Own the Yard</SectionHeaderTitle>
@@ -33,18 +33,18 @@ const LandingPageOwnTheYardSection = () => {
     </SectionHeaderContainer>
    }
   >
-   <div tw="self-center mb-[1rem] md:mb-[30px] mr-[4rem]">
+   <div tw="self-center mb-[1rem] md:mb-[30px] ">
     <OwnTheYardGraphic />
    </div>
    {/* gradient banner */}
    <HoveringOrbs
     isHovering={isHoveringOnGradientBackground}
-    tw="relative h-[102px] mt-[1rem] w-[75%] self-center z-auto rounded-[25px]"
+    tw="relative mt-[1rem] w-[75%] self-center rounded-[25px]"
     onMouseEnter={() => handleGradientBackgroundHover("enter")}
     onMouseLeave={() => handleGradientBackgroundHover("leave")}
    >
-    <div tw="border border-[2px] border-blanc relative w-full h-full flex flex-row items-center justify-center px-[35px] rounded-[25px]">
-     <div tw="flex flex-col sm:mr-[3rem]">
+    <div tw="border border-[2px] border-blanc relative w-full h-full flex flex-row items-center justify-center rounded-[25px] px-[40px] py-[20px] overflow-clip">
+     <div tw="flex flex-col sm:mr-[3rem] gap-y-[16px] ">
       <LargeText>Powered by Wega Protocol</LargeText>
       <NormalText tw="text-[21px] leading-[19px] text-blanc">
        The leading NFT betting protocol aimed at expanding NFT use cases across different platforms.

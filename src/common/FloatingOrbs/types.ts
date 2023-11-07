@@ -8,11 +8,10 @@ export const FloatingOrbBlurContainer = styled.div`
   height: 100%;
   width: 100%;
   position: absolute;
-  border-radius: inherit;
   top: 0;
   left: 0;
-  ${tw`z-[-21] bg-pretu bg-opacity-[0.3]`}
-  ${tw`backdrop-blur-[80px]`}
+  ${tw`bg-pretu bg-opacity-[0.3]`}
+  ${tw` z-[-21] backdrop-blur-[80px]`}
 `
 
 export const FloatingOrbBlurContainerWithoutBackdrop = styled.div`
@@ -20,8 +19,8 @@ export const FloatingOrbBlurContainerWithoutBackdrop = styled.div`
   height: 100%;
   width: 100%;
   position: absolute;
-  border-radius: inherit;
   top: 0;
   left: 0;
-  ${tw`z-[-21] bg-pretu bg-opacity-[0.3]`}
+  ${tw`z-[-21] bg-pretu bg-opacity-[0.01]`}
+  -webkit-overflow: clip;
 `

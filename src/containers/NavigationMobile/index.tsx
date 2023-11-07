@@ -48,7 +48,7 @@ export const NavigationMobile = () => {
   return (
    <>
     <NavigationBar tw="fixed font-primary z-[755]">
-     <div tw="container dark:text-blanc flex items-center relative z-[inherit]">
+     <div tw="container dark:text-blanc flex items-center relative z-[756]">
        <NavigationLinksContainer tw="box-border flex w-full gap-x-[30px]">
          <BrandContainer tw="mb-[4px] py-[20px]">
            <Brand tw="font-[32px] font-semibold" ><Link to="/">Wega<span className="font-[32px] dark:text-oranjo">.</span></Link></Brand>

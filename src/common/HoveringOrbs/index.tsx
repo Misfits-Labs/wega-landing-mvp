@@ -1,5 +1,5 @@
 import { useRef, useLayoutEffect } from 'react';
-import { FloatingOrbContainer, FloatingOrbBlurContainer } from '../FloatingOrbs/types';
+import { FloatingOrbContainer, FloatingOrbBlurContainerWithoutBackdrop } from '../FloatingOrbs/types';
 import { gsap, Linear } from 'gsap';
 import "twin.macro"
 // interface FloatingOrbsProps {} 
@@ -27,8 +27,8 @@ const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...pr
   }, [isHovering]);
   
   return !children ? (
-   <FloatingOrbContainer {...props}>
-    <FloatingOrbBlurContainer ></FloatingOrbBlurContainer>
+   <FloatingOrbContainer tw="w-full h-full overflow-clip" {...props}>
+    <FloatingOrbBlurContainerWithoutBackdrop ></FloatingOrbBlurContainerWithoutBackdrop>
     <div tw="relative flex justify-center items-center w-full sm:w-[100vw] sm:h-[100vh]" ref={background}>
       <div className="orb" tw="dark:bg-[#C836E0] 
       pointer-events-none 
@@ -52,16 +52,16 @@ const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...pr
     </div>
    </FloatingOrbContainer> 
   ) : <FloatingOrbContainer tw="relative w-full h-full overflow-clip" {...props}>
-      <FloatingOrbBlurContainer tw="rounded-[inherit]"></FloatingOrbBlurContainer>
-      <div tw="absolute left-[-10rem] flex justify-center items-start w-full h-full rounded-[inherit]" ref={background}>
+      <FloatingOrbBlurContainerWithoutBackdrop tw="rounded-[inherit]"></FloatingOrbBlurContainerWithoutBackdrop>
+      <div tw="absolute left-[-10rem] flex justify-center items-start w-full h-full rounded-[inherit] p-[inherit]" ref={background}>
         <div className="orb"
         tw="dark:bg-[#C836E0] 
         pointer-events-none 
         absolute w-[350px] h-[350px]
         blur-[75px]
-        left-[12rem]
+        left-[11rem]
         rounded-[100%]
-        z-[-27]"
+        z-[-25]"
         ></div>
         <div className="orb" tw="
         dark:bg-[#B80D57] 
@@ -80,7 +80,7 @@ const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...pr
         absolute w-[350px] h-[350px] rounded-[100%] 
         left-[3rem] z-[-25]"></div>
       </div>
-      {children}
+        {children}
     </FloatingOrbContainer>
    }
 

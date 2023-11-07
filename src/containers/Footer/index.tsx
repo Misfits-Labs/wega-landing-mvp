@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <footer tw="relative z-[0] w-full">
       <div tw="container dark:text-blanc mt-5 flex flex py-[56px] font-primary w-full justify-between mt-[5rem]">
-        <BrandContainer tw="mb-[4px] w-[20%]">
+        <BrandContainer tw="mb-[4px]">
           <div tw="mr-5">
             <Link to="/"><LogoDarkWo /></Link>
           </div>
@@ -31,7 +31,7 @@ const Footer = () => {
         </BrandContainer>
         <div tw="flex flex-col items-center w-full shrink">
           <NormalText tw="text-[21px] leading-[19px] text-[#D3D3D3] mb-[32px] w-full text-center">Learn, follow or inspect us.</NormalText>
-          <div tw="flex gap-x-[35px] justify-center mb-[12rem]">
+          <div tw="flex gap-x-[35px] justify-center mb-[56px]">
             <a href="https://wega.gitbook.io/wega-litepaper/" css={hoverStrokeOranjoStyle} target="_blank" tw="w-[44px]" rel="noreferrer">
             <WhitepaperIcon width="100%" height="100%" />
             </a>
@@ -48,9 +48,9 @@ const Footer = () => {
           <Link to="https://wega.gitbook.io/wega-litepaper/" target="_blank">
             <NormalText>Documentation</NormalText>
           </Link>
-          <Link tw="w-[max-content]" to="http://app.wega.fun" target="_blank">
+          {/* <Link tw="w-[max-content]" to="http://app.wega.fun" target="_blank">
             <NormalText >Play Beta</NormalText>
-          </Link>
+          </Link> */}
         </div>
       </div> 
     </footer>
