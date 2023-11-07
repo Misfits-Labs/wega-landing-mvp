@@ -18,8 +18,8 @@ const LandingPageWagerTypeSection = () => {
       <SectionHeaderSubtitle tw="text-[#F1F1EF]">Use your NFTs as a ticket to your next big win</SectionHeaderSubtitle>
      </SectionHeaderContainer>
    }>
-   <div tw='flex flex-col md:flex-row gap-[54px] sm:h-[370px] justify-center items-center'>
-    <div tw='flex flex-col items-center gap-y-[54px] sm:gap-y-[24px] h-full sm:w-[50%]'>
+   <div tw='flex flex-col md:flex-row gap-[56px] sm:h-[370px] justify-center items-center'>
+    <div tw='flex flex-col items-center gap-y-[54px] sm:gap-y-[24px] h-full'>
       <div tw='w-full flex items-center justify-around md:mb-0'>
        <img src={wagerCurrenciesSource} alt="wager currencies"/>
       </div>
@@ -28,8 +28,8 @@ const LandingPageWagerTypeSection = () => {
        <NormalText tw="text-[#F1F1EF]">Place a bet using approved tokens</NormalText>
       </div>
      </div>
-     <OrIcon tw='w-[52.75px] sm:w-[66px] h-[37.5px] sm:h-[47.343px] my-[25px] sm:my-[unset]'/>
-     <div tw='flex flex-col items-center gap-y-[54px] sm:gap-y-[24px] h-full sm:w-[50%]'>
+     <OrIcon tw='w-[52.75px] sm:w-[66px] h-[37.5px] sm:h-[47.343px] sm:my-[unset]'/>
+     <div tw='flex flex-col items-center gap-y-[54px] sm:gap-y-[24px] h-full'>
       <div tw='w-full flex items-center justify-center'>
        <img src={wagerTypeSource} alt="wager types"/>
       </div>
