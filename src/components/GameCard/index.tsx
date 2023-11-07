@@ -68,7 +68,7 @@ export const DiceGameCard = () => {
         className="card-orb" 
       />
       </GameCardHeader>
-      <GameCardBody className="position-inherit">
+      <GameCardBody>
       <GameCardTitle>Dice</GameCardTitle>
       <GameCardDescription>
         Roll the dice, the player with the highest number wins.
@@ -118,8 +118,8 @@ export const CoinFlipGameCard = () => {
 
   return (
    <GameCardContainer onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)} >
-    <GameCardHeader className="flex justify-center items-center relative">
-     <CoinFlipIcon width="83.002px" height="110.513px" ref={iconRef} className="translate-y-[1rem]"/>
+    <GameCardHeader tw="flex justify-center items-center relative">
+     <CoinFlipIcon width="83.002px" height="110.513px" ref={iconRef} tw="translate-y-[1rem]"/>
      <GameCardOrb 
       ref={orbRef}
       width='269px'
