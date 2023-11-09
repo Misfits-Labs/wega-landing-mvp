@@ -11,8 +11,12 @@ import {
 } from '../Navigation/types';
 import { NormalText } from '../../common/typography/types';
 import { useHamburgerTween, useAnimateNav } from '../../hooks';
-import 'twin.macro';
+import tw, {styled} from 'twin.macro';
 
+const NavLinksBackdropFilter = styled.div`
+  ${tw`absolute top-0 right-0 w-full h-full z-[795] transition-wega-nav backdrop-opacity-[1] backdrop-blur-[15px] rounded-[5px]`}
+  -webkit-backdrop-filter: blur(15px);
+`
 export const NavigationMobile = () => {
   const close = 1, open = 0;
   const mobileLinksContainerRef = useRef<any>(null);
@@ -69,8 +73,8 @@ export const NavigationMobile = () => {
         <Link to="https://app.wega.fun/3/" tw="w-full text-center"><NormalText tw="font-primary text-[21px] leading-[19px] text-transparent dark:bg-gradient-to-r from-oranjo-blanc to-oranjo  bg-clip-text">Play Beta</NormalText></Link>
        </div>
       </div>
-      <div tw="absolute top-0 right-0 w-full h-full z-[795] transition-wega-nav backdrop-blur-[15px] backdrop-opacity-[1] rounded-[5px]">
-     </div>
+      <NavLinksBackdropFilter/>
+      {/* <div tw="" style={{ WebkitBackdropFilter: 'blur(15px)' }}></div> */}
      </div>
    </div>
   </>
