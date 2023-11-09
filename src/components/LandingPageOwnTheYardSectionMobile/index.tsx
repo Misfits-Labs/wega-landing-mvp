@@ -5,7 +5,7 @@ import {
   SectionHeaderTitle, 
   SectionHeaderSubtitle 
 } from "../../common/Section/types";
-import { HoveringOrbs } from '../../common/FloatingOrbs';
+import { FloatingOrbs } from '../../common/FloatingOrbs';
 import {
   NormalText, 
   LargeText,
@@ -36,7 +36,7 @@ const LandingPageOwnTheYardSectionMobile = () => {
    </div>
    {/* gradient banner */}
    <div tw="relative rounded-[25px] h-[217px] border-[2px] border-blanc z-[inherit]">
-    <HoveringOrbs tw="rounded-[inherit] p-[20px]">
+    <FloatingOrbs tw="rounded-[inherit] p-[20px]">
      <div tw="relative w-full flex flex-col rounded-[inherit]">
        <div tw="flex flex-col gap-y-[24px]">
          <LargeText tw="text-left">Powered by Wega Protocol</LargeText>
@@ -49,7 +49,7 @@ const LandingPageOwnTheYardSectionMobile = () => {
          </a>
        </div>
      </div> 
-    </HoveringOrbs>
+    </FloatingOrbs>
    </div>
   </Section>
  )

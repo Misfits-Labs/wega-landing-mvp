@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from 'react';
-import { FloatingOrbContainer, FloatingOrbBlurContainer, FloatingOrbBlurContainerWithoutBackdrop } from './types';
+import { FloatingOrbContainer, FloatingOrbBlurContainer, FloatingOrbBlurContainerWithoutBackdrop, Orb } from './types';
 import { gsap, Sine } from 'gsap';
 import "twin.macro"
 // interface FloatingOrbsProps {} 
@@ -25,54 +25,17 @@ export const FloatingOrbs: React.FC<React.AllHTMLAttributes<HTMLDivElement> & Re
    <FloatingOrbContainer tw="overflow-clip" {...props}>
     <FloatingOrbBlurContainerWithoutBackdrop></FloatingOrbBlurContainerWithoutBackdrop>
     <div tw="relative flex justify-center items-center w-full sm:w-[100vw] sm:h-[100vh]" ref={orbContainerRef}>
-      <div className="orb" tw="dark:bg-[#C836E0] 
-      pointer-events-none
-      blur-[75px] 
-      absolute w-[350px] h-[350px] 
-      rounded-[100%]
-      translate-x-[5rem] translate-y-[5rem] z-[-27]"
-      ></div>
-      <div className="orb" tw="
-      dark:bg-[#B80D57] 
-      blur-[75px]
-      pointer-events-none 
-      absolute 
-      w-[350px] 
-      h-[350px] 
-      rounded-[100%]
-      translate-x-[-15rem] translate-y-[5rem] z-[-26]
-      "></div>
-      <div className="orb" tw="dark:bg-oranjo 
-      pointer-events-none
-      blur-[75px]
-      absolute w-[350px] h-[350px] rounded-[100%] 
-      translate-x-[15rem] translate-y-[-2.5rem] z-[-25]"></div>
+      <Orb className="orb" tw="dark:bg-[#C836E0] translate-x-[5rem] translate-y-[5rem] z-[-28]"/>
+      <Orb className="orb" tw="dark:bg-[#B80D57] translate-x-[-15rem] translate-y-[5rem] z-[-27]"/>
+      <Orb className="orb" tw="dark:bg-oranjo translate-x-[15rem] translate-y-[-2.5rem] z-[-25] z-[-26]"/>
     </div>
    </FloatingOrbContainer> 
   ) : <FloatingOrbContainer tw="relative w-full h-full" {...props}>
       <FloatingOrbBlurContainer tw="rounded-[inherit]"></FloatingOrbBlurContainer>
       <div tw="absolute flex justify-center items-center w-full h-full overflow-clip rounded-[inherit]" ref={orbContainerRef}>
-        <div className="orb"
-        tw="dark:bg-[#C836E0] 
-        pointer-events-none 
-        absolute w-[350px] h-[350px] 
-        rounded-[100%]
-        translate-x-[5rem] translate-y-[5rem] z-[-27]"
-        ></div>
-        <div className="orb" tw="
-        dark:bg-[#B80D57] 
-        pointer-events-none 
-        absolute 
-        w-[350px] 
-        h-[350px] 
-        rounded-[100%]
-        translate-x-[-15rem] translate-y-[5rem] z-[-26]
-        "></div>
-        <div className="orb" tw="
-        dark:bg-oranjo 
-        pointer-events-none 
-        absolute w-[350px] h-[350px] rounded-[100%] 
-        translate-x-[15rem] translate-y-[-2.5rem] z-[-25]"></div>
+        <Orb className="orb" tw="dark:bg-[#C836E0] translate-x-[5rem] translate-y-[5rem] z-[-28]"/>
+        <Orb className="orb" tw="dark:bg-[#B80D57] translate-x-[-15rem] translate-y-[5rem] z-[-27]"/>
+        <Orb className="orb" tw="dark:bg-oranjo translate-x-[15rem] translate-y-[-2.5rem] z-[-25] z-[-26]"/>
       </div>
       {children}
     </FloatingOrbContainer>

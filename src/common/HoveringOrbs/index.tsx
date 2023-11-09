@@ -30,14 +30,16 @@ const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...pr
    <FloatingOrbContainer tw="w-full h-full overflow-clip" {...props}>
     <FloatingOrbBlurContainerWithoutBackdrop ></FloatingOrbBlurContainerWithoutBackdrop>
     <div tw="relative flex justify-center items-center w-full sm:w-[100vw] sm:h-[100vh]" ref={background} >
-      <Orb className="orb" tw="dark:bg-[#C836E0] translate-x-[5rem] translate-y-[5rem] z-[-28]"/>
+      <Orb className="orb" tw="dark:bg-[#C836E0] left-[11rem] z-[-28]"/>
+      <Orb className="orb" tw="dark:bg-[#B80D57] left-[9rem] z-[-27]"/>
+      <Orb className="orb" tw="dark:bg-oranjo left-[3rem] z-[-26]"/>
       {/* <div className="orb" tw="dark:bg-[#C836E0] 
       pointer-events-none 
       absolute w-[350px] h-[350px] 
       rounded-[100%]
       translate-x-[5rem] translate-y-[5rem] z-[-27]"
       ></div> */}
-      <div className="orb" tw="
+      {/* <div className="orb" tw="
       dark:bg-[#B80D57] 
       pointer-events-none 
       absolute 
@@ -49,7 +51,7 @@ const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...pr
       <div className="orb" tw="dark:bg-oranjo 
       pointer-events-none
       absolute w-[350px] h-[350px] rounded-[100%] 
-      translate-x-[15rem] translate-y-[-2.5rem] z-[-25]"></div>
+      translate-x-[15rem] translate-y-[-2.5rem] z-[-25]"></div> */}
     </div>
    </FloatingOrbContainer> 
   ) : <FloatingOrbContainer tw="relative w-full h-full overflow-clip" {...props}>
