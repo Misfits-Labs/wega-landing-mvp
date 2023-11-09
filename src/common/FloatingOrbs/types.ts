@@ -2,6 +2,7 @@ import tw, {styled} from 'twin.macro';
 
 export const FloatingOrbContainer = styled.div`
  ${tw`sm:mt-[-5rem] absolute top-0 right-0 w-full h-full z-[-51] flex justify-center items-center`}
+ overflow: clip;
 `
 export const FloatingOrbBlurContainer = styled.div`
   content: '';
@@ -27,5 +28,6 @@ export const FloatingOrbBlurContainerWithoutBackdrop = styled.div`
 
 export const Orb = styled.div`
   ${tw`pointer-events-none absolute w-[350px] h-[350px] rounded-[100%] blur-[75px]`}
+  filter: blur(75px);
   -webkit-filter: blur(75px);
 `
