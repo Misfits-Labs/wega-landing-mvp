@@ -54,7 +54,7 @@ export const NavigationMobile = () => {
            <Brand tw="font-[32px] font-semibold" ><Link to="/">Wega<span tw="font-[32px] dark:text-oranjo">.</span></Link></Brand>
          </BrandContainer>
        </NavigationLinksContainer>
-       <div tw="relative flex items-end w-[22px] z-[756]" onClick={toggleNav} ><HamburgerIcon /></div>
+       <div tw="relative flex items-end w-[22px] z-[756]" onClick={toggleNav} ><HamburgerIcon width="100%" /></div>
      </div>
    </NavigationBar>
    <div ref={mobileLinksContainerRef} tw="z-[800] fixed top-0 w-full flex flex-col items-center translate-y-[-25rem]">

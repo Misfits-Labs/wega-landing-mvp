@@ -1,5 +1,5 @@
 import { useRef, useLayoutEffect } from 'react';
-import { FloatingOrbContainer, FloatingOrbBlurContainerWithoutBackdrop } from '../FloatingOrbs/types';
+import { FloatingOrbContainer, FloatingOrbBlurContainerWithoutBackdrop, Orb } from '../FloatingOrbs/types';
 import { gsap, Linear } from 'gsap';
 import "twin.macro"
 // interface FloatingOrbsProps {} 
@@ -7,7 +7,7 @@ interface HoveringOrbsProps extends React.AllHTMLAttributes<HTMLDivElement>, Rea
  isHovering: number;
 }
 const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...props}: HoveringOrbsProps) => {
-  // const orbContainerRef = useRef<any>(null);
+
   const background = useRef<any>();
   useLayoutEffect(()=> {
     const banner = background.current.querySelectorAll('.orb');
@@ -29,13 +29,14 @@ const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...pr
   return !children ? (
    <FloatingOrbContainer tw="w-full h-full overflow-clip" {...props}>
     <FloatingOrbBlurContainerWithoutBackdrop ></FloatingOrbBlurContainerWithoutBackdrop>
-    <div tw="relative flex justify-center items-center w-full sm:w-[100vw] sm:h-[100vh]" ref={background}>
-      <div className="orb" tw="dark:bg-[#C836E0] 
+    <div tw="relative flex justify-center items-center w-full sm:w-[100vw] sm:h-[100vh]" ref={background} >
+      <Orb className="orb" tw="dark:bg-[#C836E0] translate-x-[5rem] translate-y-[5rem] z-[-28]"/>
+      {/* <div className="orb" tw="dark:bg-[#C836E0] 
       pointer-events-none 
       absolute w-[350px] h-[350px] 
       rounded-[100%]
       translate-x-[5rem] translate-y-[5rem] z-[-27]"
-      ></div>
+      ></div> */}
       <div className="orb" tw="
       dark:bg-[#B80D57] 
       pointer-events-none 
@@ -54,16 +55,19 @@ const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...pr
   ) : <FloatingOrbContainer tw="relative w-full h-full overflow-clip" {...props}>
       <FloatingOrbBlurContainerWithoutBackdrop tw="rounded-[inherit]"></FloatingOrbBlurContainerWithoutBackdrop>
       <div tw="absolute left-[-10rem] flex justify-center items-start w-full h-full rounded-[inherit] p-[inherit]" ref={background}>
-        <div className="orb"
+        <Orb className="orb" tw="dark:bg-[#C836E0] left-[11rem] z-[-28]"/>
+        <Orb className="orb" tw="dark:bg-[#B80D57] left-[9rem] z-[-27]"/>
+        <Orb className="orb" tw="dark:bg-oranjo left-[3rem] z-[-26]"/>
+        {/* <div className="orb"
         tw="dark:bg-[#C836E0] 
         pointer-events-none 
         absolute w-[350px] h-[350px]
         blur-[75px]
         left-[11rem]
         rounded-[100%]
-        z-[-25]"
-        ></div>
-        <div className="orb" tw="
+        z-[-28]"
+        ></div> */}
+        {/* <div className="orb" tw="
         dark:bg-[#B80D57] 
         pointer-events-none 
         absolute 
@@ -72,15 +76,15 @@ const HoveringOrbs: React.FC<HoveringOrbsProps> = ({ children, isHovering, ...pr
         h-[350px] 
         rounded-[100%]
         left-[9rem] z-[-26]
-        "></div>
-        <div className="orb" tw="
+        "></div> */}
+        {/* <div className="orb" tw="
         dark:bg-oranjo 
         pointer-events-none
         blur-[75px] 
         absolute w-[350px] h-[350px] rounded-[100%] 
-        left-[3rem] z-[-25]"></div>
+        left-[3rem] z-[-25]"></div> */}
       </div>
-        {children}
+      {children}
     </FloatingOrbContainer>
    }
 

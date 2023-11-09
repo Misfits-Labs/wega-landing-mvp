@@ -33,7 +33,6 @@
     "ethers": "^5.7.2",
     "firebase": "^10.3.1",
     "joi": "^17.9.2",
-    "postcss-import": "^15.1.0",
     "react": "^18.2.0",
     "react-blockies": "^1.4.1",
     "react-dom": "^18.2.0",
@@ -73,6 +72,7 @@
     "lodash": "^4.17.21",
     "polished": "^4.2.2",
     "postcss": "^8.4.27",
+    "postcss-import": "^15.1.0",
     "prettier": "^3.0.1",
     "styled-components": "^6.0.7",
     "tailwindcss": "^3.3.3",
@@ -83,12 +83,15 @@
   },
   "browserslist": {
     "production": [
-      "last 2 versions",
-      "> 0.3%, not dead"
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
     "development": [
-      "last 2 versions",
-      "> 0.3%, not dead"
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
     ]
   }
 }

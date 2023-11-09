@@ -24,3 +24,8 @@ export const FloatingOrbBlurContainerWithoutBackdrop = styled.div`
   ${tw`z-[-21] bg-pretu bg-opacity-[0.01]`}
   -webkit-overflow: clip;
 `
+
+export const Orb = styled.div`
+  ${tw`pointer-events-none absolute w-[350px] h-[350px] rounded-[100%] blur-[75px]`}
+  -webkit-filter: blur(75px);
+`

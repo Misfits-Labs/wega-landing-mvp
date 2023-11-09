@@ -5,7 +5,7 @@
 
 // tailwind.config.js
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx,html}'],
   theme: {
 
     extend: {
@@ -76,7 +76,9 @@ export default {
   },
   darkMode: 'class',
   plugins: [
+    require('tailwindcss/nesting'),
+    require('postcss-import'),
     require('tailwindcss'),
-    require('autoprefixer')(["last 2 versions", "> 0.3%, not dead"]),
+    require('autoprefixer'),
   ],
 }
