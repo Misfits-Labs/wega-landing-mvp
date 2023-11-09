@@ -77,6 +77,6 @@ export default {
   darkMode: 'class',
   plugins: [
     require('tailwindcss'),
-    require('autoprefixer'),
+    require('autoprefixer')(["last 2 versions", "> 0.3%, not dead"]),
   ],
 }

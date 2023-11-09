@@ -17,7 +17,7 @@ export default ({ mode }) => {
     },
     css: {
       postcss: {
-        plugins: [autoprefixer()],
+        plugins: [ autoprefixer(["last 2 versions", "> 0.3%, not dead"])],
       },
     },
     plugins: [
