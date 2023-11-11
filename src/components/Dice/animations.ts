@@ -6,7 +6,7 @@ export function useRoll(diceRef: any,) {
   const triggerRoll = () => setStrigger((s: boolean) => !s);
  
   function roll() {
-    gsap.set("g#all-sides", {y: "0"})
+    gsap.set("g#all-sides", { y: "0" })
     const tl = gsap.timeline();
     tl.to("g#all-sides", {
       duration: 2,
@@ -16,9 +16,11 @@ export function useRoll(diceRef: any,) {
     })
   }
   useLayoutEffect(()=> {
-   const ctx = gsap.context(() => {
+    
+    const ctx = gsap.context(() => {
      roll();
     }, diceRef);
+
     return () => ctx.revert();
   }, [trigger]);
 

@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { PlayGameContainer } from "../LandingPageHeroSection/types";
 import { Dice } from "../Dice";
-import { useRoll, useAutoRoll } from "../Dice/animations";
+import { useRoll } from "../Dice/animations";
 import { LeftPlayerCard, RightPlayerCard } from "../LandingHeroPlayerCard";
 import Button from "../Button";
 import 'twin.macro';
@@ -9,7 +9,7 @@ import 'twin.macro';
 const LandingPageHero = () => {
  const diceRef = useRef<any>(null);
  const triggerDice = useRoll(diceRef);
- useAutoRoll(diceRef);
+//  useAutoRoll(diceRef);
  
  return ( 
     <PlayGameContainer tw="flex flex-col gap-[21px]">
