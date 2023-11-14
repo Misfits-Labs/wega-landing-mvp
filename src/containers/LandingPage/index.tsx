@@ -7,6 +7,7 @@ import LandingPageOwnTheYardSection from '../../components/LandingPageOwnTheYard
 import LandingPageOwnTheYardSectionMobile from '../../components/LandingPageOwnTheYardSectionMobile';
 import MainContainer from '../../components/MainContainer';
 import { useMediaQuery } from '../../hooks';
+
 const LandingPage = () => {
     const { isMobile } = useMediaQuery();
     return (

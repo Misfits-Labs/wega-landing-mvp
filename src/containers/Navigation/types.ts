@@ -1,5 +1,10 @@
 import tw, { styled } from 'twin.macro';
 
+export const BlackFillWrapperForSVG = styled.span`
+  svg path {
+    ${tw`fill-pretu`}
+  }
+`
 
 export const BrandContainer = styled.div`
  display: flex;

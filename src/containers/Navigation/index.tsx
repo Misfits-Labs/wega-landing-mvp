@@ -2,14 +2,17 @@
 
 import { Link } from 'react-router-dom';
 import { LogoDarkWo } from '../../assets/images';
+import { TwitterIcon } from '../../assets/icons';
 import { 
   BrandContainer, 
   Brand, 
   NavigationLinksContainer,
-  NavigationBar
+  NavigationBar,
+  BlackFillWrapperForSVG
 } from './types';
 import { useAnimateNav } from '../../hooks';
 import Button from '../../components/Button';
+
 import 'twin.macro'
 
 const Navigation = () => {
@@ -26,8 +29,11 @@ const Navigation = () => {
           </BrandContainer>
         </NavigationLinksContainer>
         <div>
-          <Button buttonType="primary" tw="flex justify-center items-center w-[max-content]">
-            Coming soon
+          <Button buttonType="primary" tw="font-secondary font-bold flex justify-center items-center w-[max-content]">
+            Follow on
+            <BlackFillWrapperForSVG tw="ms-[8px]">
+              <TwitterIcon width="16px" height="16px"/>
+            </BlackFillWrapperForSVG>
           </Button>
         </div>
       </div>

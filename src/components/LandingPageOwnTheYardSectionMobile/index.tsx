@@ -11,7 +11,7 @@ import {
   LargeText,
   MediumText
 } from '../../common/typography/types'
-import OwnTheYardGraphic from '../../assets/images/OwnTheYardGraphicMobile';
+import OwnTheYardGraphic from '../../assets/images/ownTheYardMobile.png';
 import 'twin.macro';
 
   
@@ -32,7 +32,7 @@ const LandingPageOwnTheYardSectionMobile = () => {
      </SectionHeaderContainer>
    }>
    <div tw='self-center w-full' >
-    <OwnTheYardGraphic width="100%" />
+    <img src={OwnTheYardGraphic}  alt="own-the-yard-illustration" tw="mx-auto"/>
    </div>
    {/* gradient banner */}
    <div tw="relative rounded-[25px] h-[217px] border-[2px] border-blanc z-[inherit]">

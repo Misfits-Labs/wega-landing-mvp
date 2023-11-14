@@ -7,7 +7,7 @@ import {
  SectionHeaderSubtitle
 } from "../../common/Section/types"
 import { NormalText, LargeText, MediumText } from "../../common/typography/types"
-import OwnTheYardGraphic from "../../assets/images/OwnTheYardGraphic";
+import OwnTheYardGraphic from "../../assets/images/ownTheYard.png";
 import HoveringOrbs from "../../common/HoveringOrbs"
 import "twin.macro"
 
@@ -33,13 +33,13 @@ const LandingPageOwnTheYardSection = () => {
     </SectionHeaderContainer>
    }
   >
-   <div tw="self-center mb-[1rem] md:mb-[30px] ">
-    <OwnTheYardGraphic />
+   <div tw="self-center mb-[1rem] md:mb-[30px] max-w-[408px]">
+    <img src={OwnTheYardGraphic}  alt="own-the-yard-illustration" tw="w-full" />
    </div>
    {/* gradient banner */}
    <HoveringOrbs
     isHovering={isHoveringOnGradientBackground}
-    tw="relative mt-[1rem] w-[75%] self-center rounded-[25px]"
+    tw="relative mt-[3rem] w-[75%] self-center rounded-[25px]"
     onMouseEnter={() => handleGradientBackgroundHover("enter")}
     onMouseLeave={() => handleGradientBackgroundHover("leave")}
    >
