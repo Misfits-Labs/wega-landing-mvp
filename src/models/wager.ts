@@ -11,7 +11,7 @@ export const WagerTypes = {
 } as const;
 
 export type AllPossibleWagerTypes = typeof WagerTypes[keyof typeof WagerTypes];
-
+// 
 export type Wager = {
  uuid?: string;
  wagerType: AllPossibleWagerTypes;
