@@ -32,7 +32,7 @@ const Footer = () => {
         <div tw="flex flex-col items-center w-full shrink">
           <NormalText tw="text-[21px] leading-[19px] text-[#D3D3D3] mb-[32px] w-full text-center">Learn, follow or inspect us.</NormalText>
           <div tw="flex gap-x-[35px] justify-center mb-[56px]">
-            <a href="https://wega.gitbook.io/wega-litepaper/" css={hoverStrokeOranjoStyle} target="_blank" tw="w-[44px]" rel="noreferrer">
+            <a href="https://wega-1.gitbook.io/wega-lite-paper/" css={hoverStrokeOranjoStyle} target="_blank" tw="w-[44px]" rel="noreferrer">
             <WhitepaperIcon width="100%" height="100%" />
             </a>
             <a href="https://twitter.com/PlayWega" css={hoverFillOranjoStyle} target="_blank" tw="w-[44px]" rel="noreferrer">
@@ -45,7 +45,7 @@ const Footer = () => {
           <NormalText tw="text-[21px] leading-[19px] text-blanc w-full text-center">Play together, Own together.</NormalText>
         </div>
         <div tw="flex gap-x-[15px] items-end grow">
-          <Link to="https://wega.gitbook.io/wega-litepaper/" target="_blank">
+          <Link to="https://wega-1.gitbook.io/wega-lite-paper/" target="_blank">
             <NormalText>Documentation</NormalText>
           </Link>
           {/* <Link tw="w-[max-content]" to="http://app.wega.fun" target="_blank">

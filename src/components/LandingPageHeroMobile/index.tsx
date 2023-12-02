@@ -4,8 +4,7 @@ import { useAutoRoll } from "../Dice/animations";
 import { LeftPlayerCardMobile, RightPlayerCardMobile} from "../LandingHeroPlayerCard";
 import { Link } from 'react-router-dom';
 import Button from "../Button";
-import {TwitterIcon, VersusIcon} from '../../assets/icons';
-import { BlackFillWrapperForSVG } from '../../containers/Navigation/types'
+import { VersusIcon } from '../../assets/icons';
 import 'twin.macro';
 
 const LandingPageHeroMobile = () => {
@@ -20,12 +19,12 @@ const LandingPageHeroMobile = () => {
     <RightPlayerCardMobile />
    </div>
    <Dice tw="rounded-[15px] w-[115px] h-[115px] p-[14px] border-[2.5px] mt-[-0.75rem]" diceRef={diceRef} />
-   <Link to="https://twitter.com/PlayWega" target="_blank" rel="noreferrer">
+   <Link to="https://app.wega.fun" target="_blank" rel="noreferrer">
     <Button buttonType="primary" tw="z-[-20] flex flex-row justify-center px-[24px] py-[12px] items-center mt-[5rem]" >
-        Follow on
-        <BlackFillWrapperForSVG tw="ms-[8px]">
+        Play
+        {/* <BlackFillWrapperForSVG tw="ms-[8px]">
           <TwitterIcon width="16px" height="16px"/>
-        </BlackFillWrapperForSVG>
+        </BlackFillWrapperForSVG> */}
       </Button>
    </Link>
   </div>

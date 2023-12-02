@@ -2,13 +2,11 @@
 
 import { Link } from 'react-router-dom';
 import { LogoDarkWo } from '../../assets/images';
-import { TwitterIcon } from '../../assets/icons';
 import { 
   BrandContainer, 
   Brand, 
   NavigationLinksContainer,
-  NavigationBar,
-  BlackFillWrapperForSVG
+  NavigationBar
 } from './types';
 import { useAnimateNav } from '../../hooks';
 import Button from '../../components/Button';
@@ -29,12 +27,11 @@ const Navigation = () => {
           </BrandContainer>
         </NavigationLinksContainer>
         <div>
-          <Button buttonType="primary" tw="font-secondary font-bold flex justify-center items-center w-[max-content]">
-            Follow on
-            <BlackFillWrapperForSVG tw="ms-[8px]">
-              <TwitterIcon width="16px" height="16px"/>
-            </BlackFillWrapperForSVG>
-          </Button>
+          <Link to="https://app.wega.fun" target="_blank" rel="noreferrer">
+            <Button buttonType="primary" tw="font-secondary font-bold flex justify-center items-center w-[max-content]">
+              Play
+            </Button>
+          </Link>
         </div>
       </div>
     {/* <div tw="absolute top-0 right-0 w-full h-full opacity-[0.85] bg-pretu z-[750] shadow-wega-nav shadow-inner"></div>  */}

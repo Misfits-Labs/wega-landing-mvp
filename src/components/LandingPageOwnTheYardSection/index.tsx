@@ -7,7 +7,7 @@ import {
  SectionHeaderSubtitle
 } from "../../common/Section/types"
 import { NormalText, LargeText, MediumText } from "../../common/typography/types"
-import OwnTheYardGraphic from "../../assets/images/ownTheYard.png";
+import OwnTheYardGraphic from "../../assets/images/OwnTheYardSVGIllustration";
 import HoveringOrbs from "../../common/HoveringOrbs"
 import "twin.macro"
 
@@ -33,8 +33,8 @@ const LandingPageOwnTheYardSection = () => {
     </SectionHeaderContainer>
    }
   >
-   <div tw="self-center mb-[1rem] md:mb-[30px] max-w-[408px]">
-    <img src={OwnTheYardGraphic}  alt="own-the-yard-illustration" tw="w-full" />
+   <div tw="self-center mb-[1rem] md:mb-[30px] w-[fit-content]">
+   <OwnTheYardGraphic width="549.75px" height="164.73px"/>
    </div>
    {/* gradient banner */}
    <HoveringOrbs
