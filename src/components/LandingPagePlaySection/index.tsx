@@ -28,5 +28,3 @@ const LandingPagePlaySection = () => {
  )
 }
 export default LandingPagePlaySection;
-
-{/* <SectionHeader tw="w-full text-center pt-[32px]">Play multiple P2P betting games with your NFTs.</SectionHeader>  */}

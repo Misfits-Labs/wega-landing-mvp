@@ -74,7 +74,7 @@ export const DiceGameCard = () => {
         Roll the dice, the player with the highest number wins.
       </GameCardDescription>
       {
-        <Link replace={true} to="https://app.wega.fun/#/dice/create" tw="w-[75%]" state={ { gameType: WegaTypes[WegaTypesEnum.DICE] }}><Button buttonType="primary" content='Play' tw="w-[100%]" /></Link>
+        <Link replace={true} to="https://app.wega.fun/#/" tw="w-[75%]" state={ { gameType: WegaTypes[WegaTypesEnum.DICE] }}><Button buttonType="primary" content='Play' tw="w-[100%]" /></Link>
       }
       </GameCardBody>
     </GameCardContainer>
@@ -136,7 +136,7 @@ export const CoinFlipGameCard = () => {
      </GameCardDescription>
 
      {
-      <Link replace={true} to="https://app.wega.fun/#/coinflip/create" tw="w-[75%]" state={ { gameType: WegaTypes[WegaTypesEnum.COINFLIP] } } ><Button buttonType="primary" content='Play' tw="w-[100%]" /></Link>
+      <Link replace={true} to="https://app.wega.fun/#/" tw="w-[75%]" state={ { gameType: WegaTypes[WegaTypesEnum.COINFLIP] } } ><Button buttonType="primary" content='Play' tw="w-[100%]" /></Link>
      }
     </GameCardBody>
    </GameCardContainer>
