@@ -21,11 +21,11 @@ const LandingPageHeroMobile = () => {
    <Dice tw="rounded-[15px] w-[115px] h-[115px] p-[14px] border-[2.5px] mt-[-0.75rem]" diceRef={diceRef} />
    <Link to="https://app.wega.fun" target="_blank" rel="noreferrer">
     <Button buttonType="primary" tw="z-[-20] flex flex-row justify-center px-[24px] py-[12px] items-center mt-[5rem]" >
-        Play
-        {/* <BlackFillWrapperForSVG tw="ms-[8px]">
-          <TwitterIcon width="16px" height="16px"/>
-        </BlackFillWrapperForSVG> */}
-      </Button>
+      Play
+      {/* <BlackFillWrapperForSVG tw="ms-[8px]">
+        <TwitterIcon width="16px" height="16px"/>
+      </BlackFillWrapperForSVG> */}
+    </Button>
    </Link>
   </div>
  )
