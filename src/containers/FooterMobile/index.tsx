@@ -37,7 +37,7 @@ const FooterMobile = () => {
             
             <div tw="flex flex-col items-center">
               <div tw="flex gap-x-[24px] w-full justify-center">
-                <a href="https://wega-1.gitbook.io/wega-lite-paper/" css={hoverStrokeOranjoStyle} target="_blank" tw="w-[24px]" rel="noreferrer">
+                <a href="https://wega.gitbook.io/wega-litepaper/" css={hoverStrokeOranjoStyle} target="_blank" tw="w-[24px]" rel="noreferrer">
                 <WhitepaperIcon width="100%" height="100%" />
                 </a>
                 <a href="https://twitter.com/PlayWega" css={hoverFillOranjoStyle} target="_blank" tw="w-[24px]" rel="noreferrer">
@@ -50,7 +50,7 @@ const FooterMobile = () => {
             </div>
             
             <div tw="flex flex-col gap-x-[15px] items-center">
-              <Link to="https://wega-1.gitbook.io/wega-lite-paper/" target="_blank">
+              <Link to="https://wega.gitbook.io/wega-litepaper/" target="_blank">
                 <NormalText>Documentation</NormalText>
               </Link>
               <Link to="https://app.wega.fun/#/" target="_blank">
